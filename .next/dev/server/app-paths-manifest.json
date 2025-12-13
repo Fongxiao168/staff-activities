@@ -1,11 +1,4 @@
 {
-  "/api/extract-activities/route": "app/api/extract-activities/route.js",
-  "/dashboard/page": "app/dashboard/page.js",
-  "/financial/page": "app/financial/page.js",
-  "/history/page": "app/history/page.js",
-  "/page": "app/page.js",
-  "/records/new/page": "app/records/new/page.js",
-  "/records/smart-entry/page": "app/records/smart-entry/page.js",
-  "/reporting/page": "app/reporting/page.js",
-  "/staff/page": "app/staff/page.js"
+  "/auth/login/page": "app/auth/login/page.js",
+  "/page": "app/page.js"
 }
