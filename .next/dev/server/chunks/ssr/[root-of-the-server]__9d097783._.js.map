@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/MSi/Desktop/staff-activity-tracker/app/records/smart-entry/page.tsx"],"sourcesContent":["import { createClient } from \"@/lib/supabase/server\"\nimport { redirect } from \"next/navigation\"\nimport { SmartEntryForm } from \"@/components/smart-entry-form\"\n\nexport default async function SmartEntryPage() {\n  const supabase = await createClient()\n  const {\n    data: { user },\n  } = await supabase.auth.getUser()\n\n  if (!user) {\n    redirect(\"/auth/login\")\n  }\n\n  // Fetch staff\n  const { data: staff = [] } = await supabase.from(\"staff\").select(\"*\")\n\n  return <SmartEntryForm staff={staff} />\n}\n"],"names":[],"mappings":";AAAA,SAAS,YAAY,QAAQ,wBAAuB;AACpD,SAAS,QAAQ,QAAQ,kBAAiB;AAC1C,SAAS,cAAc,QAAQ,gCAA+B;AAE9D,eAAe,eAAe;IAC5B,MAAM,WAAW,MAAM;IACvB,MAAM,EACJ,MAAM,EAAE,IAAI,EAAE,EACf,GAAG,MAAM,SAAS,IAAI,CAAC,OAAO;IAE/B,IAAI,CAAC,MAAM;QACT,SAAS;IACX;IAEA,cAAc;IACd,MAAM,EAAE,MAAM,QAAQ,EAAE,EAAE,GAAG,MAAM,SAAS,IAAI,CAAC,SAAS,MAAM,CAAC;IAEjE,qBAAO,QAAC;QAAe,OAAO;;;;;;AAChC"}}]
+}

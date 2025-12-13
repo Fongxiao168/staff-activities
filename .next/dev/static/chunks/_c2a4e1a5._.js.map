@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/MSi/Desktop/staff-activity-tracker/lib/swr-config.tsx"],"sourcesContent":["\"use client\"\n\nimport { SWRConfig } from \"swr\"\nimport type { ReactNode } from \"react\"\n\nexport function SWRProvider({ children }: { children: ReactNode }) {\n  return (\n    <SWRConfig\n      value={{\n        revalidateOnFocus: false,\n        revalidateIfStale: false,\n        dedupingInterval: 60000, // 1 minute deduplication\n        errorRetryCount: 2,\n      }}\n    >\n      {children}\n    </SWRConfig>\n  )\n}\n"],"names":[],"mappings":";;;;;AAEA;AAFA;;;AAKO,SAAS,YAAY,EAAE,QAAQ,EAA2B;IAC/D,qBACE,mSAAC,oPAAS;QACR,OAAO;YACL,mBAAmB;YACnB,mBAAmB;YACnB,kBAAkB;YAClB,iBAAiB;QACnB;kBAEC;;;;;;AAGP;KAbgB"}},
+    {"offset": {"line": 38, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/MSi/Desktop/staff-activity-tracker/components/ClientRoot.tsx"],"sourcesContent":["\"use client\"\r\n\r\nimport { SWRProvider } from \"@/lib/swr-config\"\r\nimport { Analytics } from \"@vercel/analytics/next\"\r\n\r\nexport default function ClientRoot({ children }: { children: React.ReactNode }) {\r\n  return (\r\n    <>\r\n      <SWRProvider>{children}</SWRProvider>\r\n      <Analytics />\r\n    </>\r\n  )\r\n}\r\n"],"names":[],"mappings":";;;;;AAEA;AACA;AAHA;;;;AAKe,SAAS,WAAW,EAAE,QAAQ,EAAiC;IAC5E,qBACE;;0BACE,mSAAC,uIAAW;0BAAE;;;;;;0BACd,mSAAC,sRAAS;;;;;;;AAGhB;KAPwB"}}]
+}
