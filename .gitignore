@@ -1,8 +1,20 @@
 
+# dependencies
 node_modules
+
+# next.js build output
 .next
 out
-dist
-build
+
+# local env files
+.env*
+
+# logs
 *.log
-pnpm-lock.yaml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# vscode settings (optional)
+.vscode

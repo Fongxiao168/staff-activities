@@ -1,0 +1,14 @@
+# .vercelignore
+node_modules
+*.log
+dist
+build
+.next/cache
+.env.local
+.env.development
+.env.test
+.env.production
+.git
+.gitignore
+README.md
+scripts/
