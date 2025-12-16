@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+{
+  "version": 2,
+  "builds": [
+  { "src": "package.json", "use": "@vercel/next" }
+]
+  "routes": [
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
+}
+=======
 {
   "version": 2,
   "builds": [
@@ -7,3 +18,4 @@
     { "src": "/(.*)", "dest": "/$1" }
   ]
 }
+>>>>>>> 95866f962e211a3bddc7d7b48407be98f54b1c6b
