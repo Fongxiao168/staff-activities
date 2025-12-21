@@ -14,8 +14,11 @@ export default async function StaffPage() {
     redirect("/auth/login")
   }
 
-  // Fetch staff
-  const { data: staff = [] } = await supabase.from("staff").select("*")
+  // Fetch staff for the current user only
+  const { data: staff = [] } = await supabase
+    .from("staff")
+    .select("*")
+    .eq("owner_id", user.id)
 
   return (
     <DashboardLayout userEmail={user.email}>
