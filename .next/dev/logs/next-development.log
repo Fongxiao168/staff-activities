@@ -1,19 +1,605 @@
-[00:00:18.360] Server  LOG      ✓ Ready in 17.9s
-[00:00:29.172] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:29.563] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:29.563] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
-[00:00:29.563] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765881081572}
-[00:01:12.627] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/history color: rgb(120, 120, 120) color: inherit {"dp":"/history","o":"http://localhost:3000/history","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765881124615}
-[00:02:01.153] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/records/new color: rgb(120, 120, 120) color: inherit {"dp":"/records/new","o":"http://localhost:3000/records/new","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765881173150}
-[00:02:04.344] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/staff color: rgb(120, 120, 120) color: inherit {"dp":"/staff","o":"http://localhost:3000/staff","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765881176356}
-[00:02:07.959] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765881179907}
-[00:04:54.587] Server  LOG        Reload env: .env
-[00:04:54.673] Server  LOG        Reload env: .env
-[00:21:07.065] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:21:07.324] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:21:07.325] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
-[00:21:07.325] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765882319331}
-[00:30:09.978] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:30:10.232] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:30:10.232] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
-[00:30:10.232] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765882862244}
+[00:00:04.937] Server  LOG      ✓ Ready in 3.6s
+[00:00:10.109] Server  LOG      ○ Compiling /dashboard ...
+[00:00:21.236] Server  ERROR    ⨯ ./components/financial-content.tsx:284:13
+Parsing ecmascript source code failed
+  282 |       </div>
+  283 |
+> 284 |       <Tabs value={activeTab} onValueChange={setActiveTab}>
+      |             ^^^^^
+  285 |         <TabsList className="w-full flex flex-col gap-2 sm:flex-row sm:gap-0 p-0 bg-transparent shadow-none border-none max-w-full">
+  286 |           <TabsTrigger value="add" className="flex-1 sm:flex-none gap-1 sm:gap-2 text-xs sm:text-sm rounded-md sm:rounded-none border border-input sm:border-0 bg-background sm:bg-transparent shadow-sm sm:shadow-none">
+  287 |             <Plus className="h-3 w-3 sm:h-4 sm:w-4" />
+
+Expected ',', got 'value'
+
+Import trace:
+  Server Component:
+    ./components/financial-content.tsx
+    ./app/financial/page.tsx
+
+
+[00:00:28.096] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:28.359] Browser ERROR   uncaughtError: Error: ./components/financial-content.tsx:284:13
+Parsing ecmascript source code failed
+  282 |       </div>
+  283 |
+> 284 |       <Tabs value={activeTab} onValueChange={setActiveTab}>
+      |             ^^^^^
+  285 |         <TabsList className="w-full flex flex-col gap-2 sm:flex-row sm:gap-0 p-0 bg-transparent shadow-none border-none max-w-full">
+  286 |           <TabsTrigger value="add" className="flex-1 sm:flex-none gap-1 sm:gap-2 text-xs sm:text-sm rounded-md sm:rounded-none border border-input sm:border-0 bg-background sm:bg-transparent shadow-sm sm:shadow-none">
+  287 |             <Plus className="h-3 w-3 sm:h-4 sm:w-4" />
+
+Expected ',', got 'value'
+
+Import trace:
+  Server Component:
+    ./components/financial-content.tsx
+    ./app/financial/page.tsx
+
+
+[00:00:28.484] Browser ERROR   ./components/financial-content.tsx:284:13
+Parsing ecmascript source code failed
+  282 |       </div>
+  283 |
+> 284 |       <Tabs value={activeTab} onValueChange={setActiveTab}>
+      |             ^^^^^
+  285 |         <TabsList className="w-full flex flex-col gap-2 sm:flex-row sm:gap-0 p-0 bg-transparent shadow-none border-none max-w-full">
+  286 |           <TabsTrigger value="add" className="flex-1 sm:flex-none gap-1 sm:gap-2 text-xs sm:text-sm rounded-md sm:rounded-none border border-input sm:border-0 bg-background sm:bg-transparent shadow-sm sm:shadow-none">
+  287 |             <Plus className="h-3 w-3 sm:h-4 sm:w-4" />
+
+Expected ',', got 'value'
+
+Import trace:
+  Server Component:
+    ./components/financial-content.tsx
+    ./app/financial/page.tsx
+[00:00:28.750] Browser ERROR   ./components/financial-content.tsx:284:13
+Parsing ecmascript source code failed
+  282 |       </div>
+  283 |
+> 284 |       <Tabs value={activeTab} onValueChange={setActiveTab}>
+      |             ^^^^^
+  285 |         <TabsList className="w-full flex flex-col gap-2 sm:flex-row sm:gap-0 p-0 bg-transparent shadow-none border-none max-w-full">
+  286 |           <TabsTrigger value="add" className="flex-1 sm:flex-none gap-1 sm:gap-2 text-xs sm:text-sm rounded-md sm:rounded-none border border-input sm:border-0 bg-background sm:bg-transparent shadow-sm sm:shadow-none">
+  287 |             <Plus className="h-3 w-3 sm:h-4 sm:w-4" />
+
+Expected ',', got 'value'
+
+Import trace:
+  Server Component:
+    ./components/financial-content.tsx
+    ./app/financial/page.tsx
+[00:00:29.258] Browser ERROR   ./components/financial-content.tsx:284:13
+Parsing ecmascript source code failed
+  282 |       </div>
+  283 |
+> 284 |       <Tabs value={activeTab} onValueChange={setActiveTab}>
+      |             ^^^^^
+  285 |         <TabsList className="w-full flex flex-col gap-2 sm:flex-row sm:gap-0 p-0 bg-transparent shadow-none border-none max-w-full">
+  286 |           <TabsTrigger value="add" className="flex-1 sm:flex-none gap-1 sm:gap-2 text-xs sm:text-sm rounded-md sm:rounded-none border border-input sm:border-0 bg-background sm:bg-transparent shadow-sm sm:shadow-none">
+  287 |             <Plus className="h-3 w-3 sm:h-4 sm:w-4" />
+
+Expected ',', got 'value'
+
+Import trace:
+  Server Component:
+    ./components/financial-content.tsx
+    ./app/financial/page.tsx
+[00:00:29.271] Browser ERROR   ./components/financial-content.tsx:284:13
+Parsing ecmascript source code failed
+  282 |       </div>
+  283 |
+> 284 |       <Tabs value={activeTab} onValueChange={setActiveTab}>
+      |             ^^^^^
+  285 |         <TabsList className="w-full flex flex-col gap-2 sm:flex-row sm:gap-0 p-0 bg-transparent shadow-none border-none max-w-full">
+  286 |           <TabsTrigger value="add" className="flex-1 sm:flex-none gap-1 sm:gap-2 text-xs sm:text-sm rounded-md sm:rounded-none border border-input sm:border-0 bg-background sm:bg-transparent shadow-sm sm:shadow-none">
+  287 |             <Plus className="h-3 w-3 sm:h-4 sm:w-4" />
+
+Expected ',', got 'value'
+
+Import trace:
+  Server Component:
+    ./components/financial-content.tsx
+    ./app/financial/page.tsx
+[00:00:29.631] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
+                      <div
+                        hidden={true}
+-                       bis_skin_checked="1"
+                      >
+                    ...
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="font-sans antialiased"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6Im5pbWxtZWpibW5lY25hZ2hnbWJhaG1iYWRk..."
+-                           style={{padding-right:"15px",overflow-x:"hidden",overflow-y:"hidden"}}
+                          >
+                            ...
+                              <SegmentViewNode type="page" pagePath="dashboard/...">
+                                <SegmentTrieNode>
+                                <DashboardPage>
+                                  <DashboardLayout userEmail="xiaofong@g...">
+                                    <div
+                                      className="min-h-screen bg-muted/30"
+-                                     bis_skin_checked="1"
+                                    >
+                                      <aside className="fixed inse...">
+                                        <div
+                                          className="flex h-16 items-center gap-2 border-b px-6"
+-                                         bis_skin_checked="1"
+                                        >
+                                        ...
+                                      <header className="sticky top...">
+                                        <div
+                                          className="flex items-center gap-2"
+-                                         bis_skin_checked="1"
+                                        >
+                                        ...
+                                      <div
+                                        className="lg:pl-64"
+-                                       bis_skin_checked="1"
+                                      >
+                                        <header>
+                                        <main className="p-4 lg:p-6">
+                                          <DashboardContent staff={[...]} initialRecords={[...]} trendRecords={[...]}>
+                                            <div
+                                              className="space-y-6"
+-                                             bis_skin_checked="1"
+                                            >
+                                              <div
+                                                className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-..."
+-                                               bis_skin_checked="1"
+                                              >
+                                                <div
+-                                                 bis_skin_checked="1"
+                                                >
+                                                <div
+                                                  className="flex flex-col sm:flex-row gap-2 w-full sm:w-auto"
+-                                                 bis_skin_checked="1"
+                                                >
+                                              ...
+                                                <TabsProvider scope={undefined} baseId="radix-_R_5..." value="daily" ...>
+                                                  <Primitive.div dir="ltr" data-orientation="horizontal" data-slot="tabs" ...>
+                                                    <div
+                                                      dir="ltr"
+                                                      data-orientation="horizontal"
+                                                      data-slot="tabs"
+                                                      className="flex flex-col gap-2"
+                                                      ref={null}
+-                                                     bis_skin_checked="1"
+                                                    >
+                                                      ...
+                                                        <Slot tabIndex={-1} data-orientation="horizontal" ...>
+                                                          <SlotClone tabIndex={-1} data-orientation="horizontal" ...>
+                                                            <Primitive.div role="tablist" aria-orientation="horizontal" ...>
+                                                              <div
+                                                                role="tablist"
+                                                                aria-orientation="horizontal"
+                                                                data-slot="tabs-list"
+                                                                className="bg-muted text-muted-foreground h-9 items-ce..."
+                                                                tabIndex={-1}
+                                                                data-orientation="horizontal"
+                                                                style={{outline:"none"}}
+                                                                onMouseDown={function handleEvent}
+                                                                onFocus={function handleEvent}
+                                                                onBlur={function handleEvent}
+                                                                ref={function}
+-                                                               bis_skin_checked="1"
+                                                              >
+                                                      <TabsContent value="daily" className="mt-4 sm:mt...">
+                                                        <TabsContent data-slot="tabs-content" className="flex-1 out..." ...>
+                                                          <Presence present={true}>
+                                                            <Primitive.div data-state="active" ...>
+                                                              <div
+                                                                data-state="active"
+                                                                data-orientation="horizontal"
+                                                                role="tabpanel"
+                                                                aria-labelledby="radix-_R_595esndlb_-trigger-daily"
+                                                                hidden={false}
+                                                                id="radix-_R_595esndlb_-content-daily"
+                                                                tabIndex={0}
+                                                                data-slot="tabs-content"
+                                                                className="flex-1 outline-none mt-4 sm:mt-6 space-y-4 ..."
+                                                                style={{animationDuration:"0s"}}
+                                                                ref={function}
+-                                                               bis_skin_checked="1"
+                                                              >
+                                                                <div
+                                                                  className="flex flex-col sm:flex-row sm:flex-wrap sm..."
+-                                                                 bis_skin_checked="1"
+                                                                >
+                                                                <p>
+                                                                <div
+                                                                  className="mb-2 flex justify-end"
+-                                                                 bis_skin_checked="1"
+                                                                >
+                                                                <Card>
+                                                                  <div
+                                                                    data-slot="card"
+                                                                    className="bg-card text-card-foreground flex flex-..."
+-                                                                   bis_skin_checked="1"
+                                                                  >
+                                                                    <CardHeader className="pb-2 sm:pb-4">
+                                                                      <div
+                                                                        data-slot="card-header"
+                                                                        className="@container/card-header grid auto-ro..."
+-                                                                       bis_skin_checked="1"
+                                                                      >
+                                                                        <CardTitle className="text-base ...">
+                                                                          <div
+                                                                            data-slot="card-title"
+                                                                            className="font-semibold text-base sm:text-lg"
+-                                                                           bis_skin_checked="1"
+                                                                          >
++                                                                           All Activities (1-21)
+                                                                        <CardDescription className="text-xs sm...">
+                                                                          <div
+                                                                            data-slot="card-description"
+                                                                            className="text-muted-foreground text-xs s..."
+-                                                                           bis_skin_checked="1"
+                                                                          >
++                                                                           Complete metrics for the selected period in...
+                                                                    <CardContent>
+                                                                      <div
+                                                                        data-slot="card-content"
+                                                                        className="px-6"
+-                                                                       bis_skin_checked="1"
+                                                                      >
+                                                                        <div
+                                                                          className="grid gap-2 sm:gap-4 grid-cols-2 s..."
+-                                                                         bis_skin_checked="1"
+                                                                        >
+                                                                          <div
+                                                                            className="rounded-lg border p-2 sm:p-4 bg..."
+-                                                                           bis_skin_checked="1"
+                                                                          >
+                                                                          <div
+                                                                            className="rounded-lg border p-2 sm:p-4 bg..."
+-                                                                           bis_skin_checked="1"
+                                                                          >
+                                                                          <div
+                                                                            className="rounded-lg border p-2 sm:p-4 bg..."
+-                                                                           bis_skin_checked="1"
+                                                                          >
+                                                                          <div
+                                                                            className="rounded-lg border p-2 sm:p-4 bg..."
+-                                                                           bis_skin_checked="1"
+                                                                          >
+                                                                          <div
+                                                                            className="rounded-lg border p-2 sm:p-4 bg..."
+-                                                                           bis_skin_checked="1"
+                                                                          >
+                                                                          <div
+                                                                            className="rounded-lg border p-2 sm:p-4 bg..."
+-                                                                           bis_skin_checked="1"
+                                                                          >
+                                                                          <div
+                                                                            className="rounded-lg border p-2 sm:p-4 bg..."
+-                                                                           bis_skin_checked="1"
+                                                                          >
+                                                                          <div
+                                                                            className="rounded-lg border p-2 sm:p-4 bg..."
+-                                                                           bis_skin_checked="1"
+                                                                          >
+                                                                          <div
+                                                                            className="rounded-lg border p-2 sm:p-4 bg..."
+-                                                                           bis_skin_checked="1"
+                                                                          >
+                                                                          <div
+                                                                            className="rounded-lg border p-2 sm:p-4 bg..."
+-                                                                           bis_skin_checked="1"
+                                                                          >
+                                                                          <div
+                                                                            className="rounded-lg border p-2 sm:p-4 bg..."
+-                                                                           bis_skin_checked="1"
+                                                                          >
+                                                                          <div
+                                                                            className="rounded-lg border p-2 sm:p-4 bg..."
+-                                                                           bis_skin_checked="1"
+                                                                          >
+                                                                          <div
+                                                                            className="rounded-lg border p-2 sm:p-4 bg..."
+-                                                                           bis_skin_checked="1"
+                                                                          >
+                                                                          <div
+                                                                            className="rounded-lg border p-2 sm:p-4 bg..."
+-                                                                           bis_skin_checked="1"
+                                                                          >
+                                                                          <div
+                                                                            className="rounded-lg border p-2 sm:p-4 bg..."
+-                                                                           bis_skin_checked="1"
+                                                                          >
+                                                                          <div
+                                                                            className="rounded-lg border p-2 sm:p-4 bg..."
+-                                                                           bis_skin_checked="1"
+                                                                          >
+                                                                          <div
+                                                                            className="rounded-lg border p-2 sm:p-4 bg..."
+-                                                                           bis_skin_checked="1"
+                                                                          >
+                                                                          <div
+                                                                            className="rounded-lg border p-2 sm:p-4 bg..."
+-                                                                           bis_skin_checked="1"
+                                                                          >
+                                                                          <div
+                                                                            className="rounded-lg border p-2 sm:p-4 bg..."
+-                                                                           bis_skin_checked="1"
+                                                                          >
+                                                                          <div
+                                                                            className="rounded-lg border p-2 sm:p-4 bg..."
+-                                                                           bis_skin_checked="1"
+                                                                          >
+                                                                          <div
+                                                                            className="rounded-lg border p-2 sm:p-4 bg..."
+-                                                                           bis_skin_checked="1"
+                                                                          >
+                                                                <div
+                                                                  className="grid gap-3 sm:gap-4 grid-cols-2 lg:grid-c..."
+-                                                                 bis_skin_checked="1"
+                                                                >
+                                                                  <Card>
+                                                                    <div
+                                                                      data-slot="card"
+                                                                      className="bg-card text-card-foreground flex fle..."
+-                                                                     bis_skin_checked="1"
+                                                                    >
+                                                                      <CardHeader className="pb-1 sm:pb-2">
+                                                                        <div
+                                                                          data-slot="card-header"
+                                                                          className="@container/card-header grid auto-..."
+-                                                                         bis_skin_checked="1"
+                                                                        >
+                                                                          <CardTitle className="text-xs sm...">
+                                                                            <div
+                                                                              data-slot="card-title"
+                                                                              className="text-xs sm:text-sm font-medium"
+-                                                                             bis_skin_checked="1"
+                                                                            >
++                                                                             Active Staff
+                                                                      <CardContent>
+                                                                        <div
+                                                                          data-slot="card-content"
+                                                                          className="px-6"
+-                                                                         bis_skin_checked="1"
+                                                                        >
+                                                                          <div
+                                                                            className="text-xl sm:text-2xl font-bold"
+-                                                                           bis_skin_checked="1"
+                                                                          >
++                                                                           1
+                                                                          ...
+                                                                  <Card>
+                                                                    <div
+                                                                      data-slot="card"
+                                                                      className="bg-card text-card-foreground flex fle..."
+-                                                                     bis_skin_checked="1"
+                                                                    >
+                                                                      <CardHeader className="pb-1 sm:pb-2">
+                                                                        <div
+                                                                          data-slot="card-header"
+                                                                          className="@container/card-header grid auto-..."
+-                                                                         bis_skin_checked="1"
+                                                                        >
+                                                                          <CardTitle className="text-xs sm...">
+                                                                            <div
+                                                                              data-slot="card-title"
+                                                                              className="text-xs sm:text-sm font-medium"
+-                                                                             bis_skin_checked="1"
+                                                                            >
++                                                                             Records This Period
+                                                                      <CardContent>
+                                                                        <div
+                                                                          data-slot="card-content"
+                                                                          className="px-6"
+-                                                                         bis_skin_checked="1"
+                                                                        >
+                                                                          <div
+                                                                            className="text-xl sm:text-2xl font-bold"
+-                                                                           bis_skin_checked="1"
+                                                                          >
++                                                                           0
+                                                                          ...
+                                                                  <Card>
+                                                                    <div
+                                                                      data-slot="card"
+                                                                      className="bg-card text-card-foreground flex fle..."
+-                                                                     bis_skin_checked="1"
+                                                                    >
+                                                                      <CardHeader className="pb-1 sm:pb-2">
+                                                                        <div
+                                                                          data-slot="card-header"
+                                                                          className="@container/card-header grid auto-..."
+-                                                                         bis_skin_checked="1"
+                                                                        >
+                                                                          <CardTitle className="text-xs sm...">
+                                                                            <div
+                                                                              data-slot="card-title"
+                                                                              className="text-xs sm:text-sm font-medium"
+-                                                                             bis_skin_checked="1"
+                                                                            >
++                                                                             Net Flow
+                                                                      <CardContent>
+                                                                        <div
+                                                                          data-slot="card-content"
+                                                                          className="px-6"
+-                                                                         bis_skin_checked="1"
+                                                                        >
+                                                                          <div
+                                                                            className="text-xl sm:text-2xl font-bold t..."
+-                                                                           bis_skin_checked="1"
+                                                                          >
++                                                                           0.00
+                                                                          ...
+                                                                  <Card>
+                                                                    <div
+                                                                      data-slot="card"
+                                                                      className="bg-card text-card-foreground flex fle..."
+-                                                                     bis_skin_checked="1"
+                                                                    >
+                                                                      <CardHeader className="pb-1 sm:pb-2">
+                                                                        <div
+                                                                          data-slot="card-header"
+                                                                          className="@container/card-header grid auto-..."
+-                                                                         bis_skin_checked="1"
+                                                                        >
+                                                                          <CardTitle className="text-xs sm...">
+                                                                            <div
+                                                                              data-slot="card-title"
+                                                                              className="text-xs sm:text-sm font-medium"
+-                                                                             bis_skin_checked="1"
+                                                                            >
++                                                                             Avg per Staff
+                                                                      <CardContent>
+                                                                        <div
+                                                                          data-slot="card-content"
+                                                                          className="px-6"
+-                                                                         bis_skin_checked="1"
+                                                                        >
+                                                                          <div
+                                                                            className="text-xl sm:text-2xl font-bold"
+-                                                                           bis_skin_checked="1"
+                                                                          >
++                                                                           0
+                                                                          ...
+                                              <PerformanceCharts records={[...]}>
+                                                <Card>
+                                                  <div
+                                                    data-slot="card"
+                                                    className="bg-card text-card-foreground flex flex-col gap-6 rounde..."
+-                                                   bis_skin_checked="1"
+                                                  >
+                                                    <CardHeader className="pb-2 sm:pb-4">
+                                                      <div
+                                                        data-slot="card-header"
+                                                        className="@container/card-header grid auto-rows-min grid-rows..."
+-                                                       bis_skin_checked="1"
+                                                      >
+                                                        <CardTitle className="text-base ...">
+                                                          <div
+                                                            data-slot="card-title"
+                                                            className="font-semibold text-base sm:text-lg"
+-                                                           bis_skin_checked="1"
+                                                          >
++                                                           Performance Trends
+                                                        <CardDescription className="text-xs sm...">
+                                                          <div
+                                                            data-slot="card-description"
+                                                            className="text-muted-foreground text-xs sm:text-sm"
+-                                                           bis_skin_checked="1"
+                                                          >
++                                                           No data available for the selected period
+                                                    <CardContent className="flex h-[20...">
+                                                      <div
+                                                        data-slot="card-content"
+                                                        className="px-6 flex h-[200px] sm:h-[300px] items-center justi..."
+-                                                       bis_skin_checked="1"
+                                                      >
++                                                       Record some activities to see trends here
+                              ...
+                            ...
+                  ...
+
+[00:00:29.755] Browser ERROR   ./components/financial-content.tsx:284:13
+Parsing ecmascript source code failed
+  282 |       </div>
+  283 |
+> 284 |       <Tabs value={activeTab} onValueChange={setActiveTab}>
+      |             ^^^^^
+  285 |         <TabsList className="w-full flex flex-col gap-2 sm:flex-row sm:gap-0 p-0 bg-transparent shadow-none border-none max-w-full">
+  286 |           <TabsTrigger value="add" className="flex-1 sm:flex-none gap-1 sm:gap-2 text-xs sm:text-sm rounded-md sm:rounded-none border border-input sm:border-0 bg-background sm:bg-transparent shadow-sm sm:shadow-none">
+  287 |             <Plus className="h-3 w-3 sm:h-4 sm:w-4" />
+
+Expected ',', got 'value'
+
+Import trace:
+  Server Component:
+    ./components/financial-content.tsx
+    ./app/financial/page.tsx
+[00:00:29.772] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:29.772] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[00:00:29.772] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766401253623}
+[00:00:29.772] Browser ERROR   ./components/financial-content.tsx:284:13
+Parsing ecmascript source code failed
+  282 |       </div>
+  283 |
+> 284 |       <Tabs value={activeTab} onValueChange={setActiveTab}>
+      |             ^^^^^
+  285 |         <TabsList className="w-full flex flex-col gap-2 sm:flex-row sm:gap-0 p-0 bg-transparent shadow-none border-none max-w-full">
+  286 |           <TabsTrigger value="add" className="flex-1 sm:flex-none gap-1 sm:gap-2 text-xs sm:text-sm rounded-md sm:rounded-none border border-input sm:border-0 bg-background sm:bg-transparent shadow-sm sm:shadow-none">
+  287 |             <Plus className="h-3 w-3 sm:h-4 sm:w-4" />
+
+Expected ',', got 'value'
+
+Import trace:
+  Server Component:
+    ./components/financial-content.tsx
+    ./app/financial/page.tsx
+[00:01:03.207] Server  LOG      ✓ Compiled in 1067ms
+[00:01:06.601] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:07.172] Browser ERROR   React has detected a change in the order of Hooks called by %s. This will lead to bugs and errors if not fixed. For more information, read the Rules of Hooks: https://react.dev/link/rules-of-hooks
+
+   Previous render            Next render
+   ------------------------------------------------------
+%s   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ FinancialContent 1. useState                   useState
+2. useEffect                  useEffect
+3. useState                   useState
+4. useState                   useState
+5. useState                   useState
+6. useState                   useState
+7. useState                   useState
+8. useState                   useState
+9. useState                   useState
+10. useState                  useState
+11. useState                  useState
+12. useState                  useState
+13. useState                  useState
+14. useState                  useState
+15. useState                  useState
+16. useState                  useState
+17. useState                  useState
+18. useState                  useState
+19. useState                  useState
+20. useState                  useState
+21. useState                  useState
+22. useState                  useState
+23. useState                  useState
+24. useState                  useState
+25. useEffect                 useEffect
+26. undefined                 useEffect
+
+[00:01:07.172] Browser ERROR   uncaughtError: Error: Rendered more hooks than during the previous render.
+[00:01:31.692] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/history color: rgb(120, 120, 120) color: inherit {"dp":"/history","o":"http://localhost:3000/history","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766401315520}
+[00:01:41.206] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/staff color: rgb(120, 120, 120) color: inherit {"dp":"/staff","o":"http://localhost:3000/staff","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766401325065}
+[00:02:14.397] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766401358111}
+[00:02:21.137] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/staff color: rgb(120, 120, 120) color: inherit {"dp":"/staff","o":"http://localhost:3000/staff","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766401364993}

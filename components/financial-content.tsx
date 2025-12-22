@@ -69,12 +69,13 @@ const MONTHS = [
 ]
 
 export function FinancialContent({ staff = [], userId }: FinancialContentProps) {
+
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => { setMounted(true) }, [])
+
   const [activeTab, setActiveTab] = useState("add")
   const [selectedStaff, setSelectedStaff] = useState("")
-  const [selectedMonth, setSelectedMonth] = useState(() => {
-    const now = new Date()
-    return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}`
-  })
+  const [selectedMonth, setSelectedMonth] = useState("")
   const [monthlyEarning, setMonthlyEarning] = useState("")
   const [newCustomers, setNewCustomers] = useState("")
   const [totalInvestment, setTotalInvestment] = useState("")
@@ -84,7 +85,7 @@ export function FinancialContent({ staff = [], userId }: FinancialContentProps) 
 
   // History state
   const [historyStaff, setHistoryStaff] = useState("all")
-  const [historyYear, setHistoryYear] = useState(() => new Date().getFullYear().toString())
+  const [historyYear, setHistoryYear] = useState("")
   const [historyMonth, setHistoryMonth] = useState("all")
   const [records, setRecords] = useState<FinancialRecord[]>([])
   const [employeesWithFinancials, setEmployeesWithFinancials] = useState<EmployeeWithFinancials[]>([])
@@ -97,17 +98,31 @@ export function FinancialContent({ staff = [], userId }: FinancialContentProps) 
   const [deleting, setDeleting] = useState(false)
 
   // Generate month options for adding records (last 24 months)
-  const monthOptions = Array.from({ length: 24 }, (_, i) => {
-    const date = new Date()
-    date.setMonth(date.getMonth() - i)
-    const value = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}`
-    const label = date.toLocaleDateString("en-US", { year: "numeric", month: "long" })
-    return { value, label }
-  })
-
+  const [monthOptions, setMonthOptions] = useState<{ value: string, label: string }[]>([])
   // Generate year options
-  const currentYear = new Date().getFullYear()
-  const yearOptions = Array.from({ length: 5 }, (_, i) => currentYear - i)
+  const [yearOptions, setYearOptions] = useState<number[]>([])
+
+  useEffect(() => {
+    if (!mounted) return
+    // Set initial selectedMonth and year options only on client
+    const now = new Date()
+    setSelectedMonth(`${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}`)
+    setHistoryYear(now.getFullYear().toString())
+    // Month options
+    setMonthOptions(Array.from({ length: 24 }, (_, i) => {
+      const date = new Date()
+      date.setMonth(date.getMonth() - i)
+      const value = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}`
+      const label = date.toLocaleDateString("en-US", { year: "numeric", month: "long" })
+      return { value, label }
+    }))
+    // Year options
+    const currentYear = now.getFullYear()
+    setYearOptions(Array.from({ length: 5 }, (_, i) => currentYear - i))
+  }, [mounted])
+
+
+  if (!mounted) return null
 
   const displayData = historyStaff === "all" ? employeesWithFinancials : employeesWithFinancials.filter((e) => e.record)
   const totalEarnings = displayData.reduce((sum, e) => sum + (e.record?.monthly_earning || 0), 0)
@@ -258,71 +273,12 @@ export function FinancialContent({ staff = [], userId }: FinancialContentProps) 
     }
   }
 
-  const handleEdit = (record: FinancialRecord) => {
-    setEditingId(record.id)
-    setEditData({
-      monthly_earning: record.monthly_earning,
-      new_customers_developed: record.new_customers_developed,
-      total_customer_investment: record.total_customer_investment,
-      notes: record.notes,
-    })
-  }
-
-  const handleSaveEdit = async (id: string) => {
-    const supabase = createClient()
-    const { error } = await supabase
-      .from("financial_records")
-      .update({
-        monthly_earning: editData.monthly_earning || 0,
-        new_customers_developed: editData.new_customers_developed || 0,
-        total_customer_investment: editData.total_customer_investment || 0,
-        notes: editData.notes,
-      })
-      .eq("id", id)
-
-    if (!error) {
-      fetchRecords() // Refresh the list
-      setEditingId(null)
-      setEditData({})
-    }
-  }
-
-  const formatMonth = (dateStr: string) => {
-    const date = new Date(dateStr)
-    return date.toLocaleDateString("en-US", { year: "numeric", month: "long" })
-  }
-
   return (
-    <div className="space-y-4 sm:space-y-6 max-w-full">
-      <AlertDialog open={deleteDialogOpen} onOpenChange={setDeleteDialogOpen}>
-        <AlertDialogContent>
-          <AlertDialogHeader>
-            <AlertDialogTitle>Delete Financial Record</AlertDialogTitle>
-            <AlertDialogDescription>
-              Are you sure you want to delete the financial record for{" "}
-              <span className="font-semibold">{recordToDelete?.employeeName}</span>? This action cannot be undone.
-            </AlertDialogDescription>
-          </AlertDialogHeader>
-          <AlertDialogFooter>
-            <AlertDialogCancel disabled={deleting}>Cancel</AlertDialogCancel>
-            <AlertDialogAction
-              onClick={confirmDelete}
-              disabled={deleting}
-              className="bg-destructive text-destructive-foreground hover:bg-destructive/90"
-            >
-              {deleting ? "Deleting..." : "Delete"}
-            </AlertDialogAction>
-          </AlertDialogFooter>
-        </AlertDialogContent>
-      </AlertDialog>
-
-      <div>
-        <h1 className="text-xl sm:text-2xl font-bold break-words">Financial Records</h1>
-        <p className="text-sm text-muted-foreground break-words">
-          Record and view employee monthly earnings and customer development
-        </p>
-      </div>
-
+    <div>
+      <h1 className="text-xl sm:text-2xl font-bold break-words">Financial Records</h1>
+      <p className="text-sm text-muted-foreground break-words">
+        Record and view employee monthly earnings and customer development
+      </p>
       <Tabs value={activeTab} onValueChange={setActiveTab}>
         <TabsList className="w-full flex flex-col gap-2 sm:flex-row sm:gap-0 p-0 bg-transparent shadow-none border-none max-w-full">
           <TabsTrigger value="add" className="flex-1 sm:flex-none gap-1 sm:gap-2 text-xs sm:text-sm rounded-md sm:rounded-none border border-input sm:border-0 bg-background sm:bg-transparent shadow-sm sm:shadow-none">
