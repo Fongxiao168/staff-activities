@@ -1,7 +1,6 @@
 import { redirect } from "next/navigation"
 import { createClient } from "@/lib/supabase/server"
-import { DashboardLayout } from "@/components/dashboard-layout"
-import { DashboardContent } from "@/components/dashboard-content"
+import DashboardClient from "./DashboardClient"
 
 export default async function DashboardPage() {
   const supabase = await createClient()
@@ -28,8 +27,11 @@ export default async function DashboardPage() {
   const trendRecords = initialRecords
 
   return (
-    <DashboardLayout userEmail={user.email}>
-      <DashboardContent staff={staff} initialRecords={initialRecords} trendRecords={trendRecords} />
-    </DashboardLayout>
+    <DashboardClient
+      userEmail={user.email}
+      staff={staff}
+      initialRecords={initialRecords}
+      trendRecords={trendRecords}
+    />
   )
 }
