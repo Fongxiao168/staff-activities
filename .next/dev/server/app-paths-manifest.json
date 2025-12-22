@@ -1,6 +1,9 @@
 {
   "/dashboard/page": "app/dashboard/page.js",
+<<<<<<< HEAD
   "/financial/page": "app/financial/page.js",
   "/history/page": "app/history/page.js",
+=======
+>>>>>>> a905768c60541c77639511f11bd8e71fdd68e848
   "/staff/page": "app/staff/page.js"
 }

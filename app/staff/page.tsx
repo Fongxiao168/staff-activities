@@ -14,8 +14,16 @@ export default async function StaffPage() {
     redirect("/auth/login")
   }
 
-  // Fetch staff
-  const { data: staff = [] } = await supabase.from("staff").select("*")
+<<<<<<< HEAD
+  // Fetch staff for this admin only
+  const { data: staff = [] } = await supabase.from("staff").select("*").eq("admin_id", user.id)
+=======
+  // Fetch staff for the current user only
+  const { data: staff = [] } = await supabase
+    .from("staff")
+    .select("*")
+    .eq("owner_id", user.id)
+>>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
 
   return (
     <DashboardLayout userEmail={user.email}>
@@ -24,7 +32,7 @@ export default async function StaffPage() {
           <h1 className="text-2xl font-bold tracking-tight">Staff Members</h1>
           <p className="text-muted-foreground">Manage your team members and their information</p>
         </div>
-        <StaffList initialStaff={staff} />
+        <StaffList initialStaff={staff} adminId={user.id} />
       </div>
     </DashboardLayout>
   )

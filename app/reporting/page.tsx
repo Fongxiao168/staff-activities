@@ -11,6 +11,7 @@ import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@
 import { Calendar } from "@/components/ui/calendar"
 import { createClient } from "@/lib/supabase/client"
 import { useStaff } from "@/hooks/use-staff"
+import { useEffect as useEffectOrig } from "react"
 import type { DailyRecord } from "@/lib/types"
 
 const ALL_COLUMNS = [
@@ -25,30 +26,31 @@ const ALL_COLUMNS = [
 ]
 
 
+
 const ReportingPage = () => {
-			const [showCalendar, setShowCalendar] = useState(false);
-		// --- Export to CSV ---
-		function exportToCSV() {
-			const headers = columnsToShow.map(col => col.label)
-			const rows = sortedRecords.map(record =>
-				columnsToShow.map(col => {
-					if (col.key === "staff") return record.staff?.name || "-"
-					return (record as any)[col.key]
-				})
-			)
-			const csvContent = [headers, ...rows]
-				.map(row => row.map(cell => `"${String(cell).replace(/"/g, '""')}"`).join(","))
-				.join("\n")
-			const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" })
-			const url = URL.createObjectURL(blob)
-			const link = document.createElement("a")
-			link.href = url
-			link.setAttribute("download", `report-${new Date().toISOString().slice(0, 10)}.csv`)
-			document.body.appendChild(link)
-			link.click()
-			document.body.removeChild(link)
-			URL.revokeObjectURL(url)
-		}
+	const [showCalendar, setShowCalendar] = useState(false);
+	// --- Export to CSV ---
+	function exportToCSV() {
+		const headers = columnsToShow.map(col => col.label)
+		const rows = sortedRecords.map(record =>
+			columnsToShow.map(col => {
+				if (col.key === "staff") return record.staff?.name || "-"
+				return (record as any)[col.key]
+			})
+		)
+		const csvContent = [headers, ...rows]
+			.map(row => row.map(cell => `"${String(cell).replace(/"/g, '""')}"`).join(","))
+			.join("\n")
+		const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" })
+		const url = URL.createObjectURL(blob)
+		const link = document.createElement("a")
+		link.href = url
+		link.setAttribute("download", `report-${new Date().toISOString().slice(0, 10)}.csv`)
+		document.body.appendChild(link)
+		link.click()
+		document.body.removeChild(link)
+		URL.revokeObjectURL(url)
+	}
 	const [records, setRecords] = useState<DailyRecord[]>([])
 	const [loading, setLoading] = useState(true)
 	const [error, setError] = useState<string | null>(null)
@@ -60,20 +62,31 @@ const ReportingPage = () => {
 	const [selectedStaff, setSelectedStaff] = useState<string>("all")
 	const [dateRange, setDateRange] = useState<{ from: Date | undefined; to: Date | undefined }>({ from: undefined, to: undefined })
 
-	// ...existing code...
-
+	// Only show records for staff belonging to this admin
 	useEffect(() => {
 		const fetchData = async () => {
 			setLoading(true)
 			setError(null)
 			try {
 				const supabase = createClient()
-				const { data, error } = await supabase
-					.from("daily_records")
-					.select("*, staff(name)")
-					.order("record_date", { ascending: false })
-				if (error) throw error
-				setRecords(data || [])
+				// Wait for staff to load
+				if (!staff || staff.length === 0) {
+					setRecords([])
+					setLoading(false)
+					return
+				}
+				const staffIds = staff.map((s) => s.id)
+				let data: DailyRecord[] = []
+				if (staffIds.length > 0) {
+					const res = await supabase
+						.from("daily_records")
+						.select("*, staff(name)")
+						.in("staff_id", staffIds)
+						.order("record_date", { ascending: false })
+					if (res.error) throw res.error
+					data = res.data || []
+				}
+				setRecords(data)
 			} catch (err: any) {
 				setError(err.message || "Failed to fetch data")
 			} finally {
@@ -81,7 +94,7 @@ const ReportingPage = () => {
 			}
 		}
 		fetchData()
-	}, [])
+	}, [staff])
 
 
 

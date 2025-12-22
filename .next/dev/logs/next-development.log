@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [00:00:04.937] Server  LOG      ✓ Ready in 3.6s
 [00:00:10.109] Server  LOG      ○ Compiling /dashboard ...
 [00:00:21.236] Server  ERROR    ⨯ ./components/financial-content.tsx:284:13
@@ -102,6 +103,1481 @@ Import trace:
     ./components/financial-content.tsx
     ./app/financial/page.tsx
 [00:00:29.631] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+=======
+[00:00:04.168] Server  LOG      ✓ Ready in 3.2s
+[00:00:11.586] Server  LOG      ○ Compiling /dashboard ...
+[00:00:24.798] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:25.903] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <div className="min-h-scre...">
+      <aside>
+      <header>
+      <div className="lg:pl-64">
+        ...
+          <DropdownMenuTrigger asChild={true}>
+            <DropdownMenuTrigger data-slot="dropdown-m..." asChild={true}>
+              <MenuAnchor asChild={true} __scopeMenu={{Menu:[...], ...}}>
+                <PopperAnchor __scopePopper={{Menu:[...], ...}} asChild={true} ref={null}>
+                  <Primitive.div asChild={true} ref={function}>
+                    <Slot ref={function}>
+                      <SlotClone ref={function}>
+                        <Primitive.button type="button" id="radix-_R_6..." aria-haspopup="menu" aria-expanded={false} ...>
+                          <Slot type="button" id="radix-_R_6..." aria-haspopup="menu" aria-expanded={false} ...>
+                            <SlotClone type="button" id="radix-_R_6..." aria-haspopup="menu" aria-expanded={false} ...>
+                              <Button variant="ghost" className="gap-2" type="button" id="radix-_R_6..." ...>
+                                <button
+                                  data-slot="dropdown-menu-trigger"
+                                  className={"inline-flex items-center justify-center whitespace-nowrap rounded-md te..."}
+                                  type="button"
++                                 id="radix-_R_65esndlb_"
+-                                 id="radix-_R_p5esndlb_"
+                                  aria-haspopup="menu"
+                                  aria-expanded={false}
+                                  aria-controls={undefined}
+                                  data-state="closed"
+                                  data-disabled={undefined}
+                                  disabled={false}
+                                  onPointerDown={function handleEvent}
+                                  onKeyDown={function handleEvent}
+                                  ref={function}
+                                >
+          ...
+        <main className="p-4 lg:p-6">
+          <DashboardContent staff={[...]} initialRecords={[...]} trendRecords={[...]}>
+            <div className="space-y-6">
+              ...
+                <SelectProvider scope={undefined} onNativeOptionAdd={function Select.useCallback} ...>
+                  <SelectTrigger className="w-full sm:...">
+                    <SelectTrigger data-slot="select-tri..." data-size="default" className={"border-i..."}>
+                      <PopperAnchor asChild={true} __scopePopper={{Popper:[...]}}>
+                        <Primitive.div asChild={true} ref={function}>
+                          <Slot ref={function}>
+                            <SlotClone ref={function}>
+                              <Primitive.button type="button" role="combobox" aria-controls="radix-_R_c..." ...>
+                                <button
+                                  type="button"
+                                  role="combobox"
++                                 aria-controls="radix-_R_cq5esndlb_"
+-                                 aria-controls="radix-_R_1j95esndlb_"
+                                  aria-expanded={false}
+                                  aria-required={undefined}
+                                  aria-autocomplete="none"
+                                  dir="ltr"
+                                  data-state="closed"
+                                  disabled={false}
+                                  data-disabled={undefined}
+                                  data-placeholder={undefined}
+                                  data-slot="select-trigger"
+                                  data-size="default"
+                                  className={"border-input data-[placeholder]:text-muted-foreground [&_svg:not([class..."}
+                                  onClick={function handleEvent}
+                                  onPointerDown={function handleEvent}
+                                  onKeyDown={function handleEvent}
+                                  ref={function}
+                                >
+                  ...
+              <Tabs value="daily" onValueChange={function onValueChange}>
+                <Tabs data-slot="tabs" className="flex flex-..." value="daily" onValueChange={function onValueChange}>
+                  <TabsProvider scope={undefined} baseId="radix-_R_1..." value="daily" ...>
+                    <Primitive.div dir="ltr" data-orientation="horizontal" data-slot="tabs" className="flex flex-..." ...>
+                      <div dir="ltr" data-orientation="horizontal" data-slot="tabs" className="flex flex-..." ref={null}>
+                        ...
+                          <div role="tablist" aria-orientation="horizontal" data-slot="tabs-list" ...>
+                            ...
+                              <Slot tabIndex={-1} data-orientation="horizontal" onMouseDown={function handleEvent} ...>
+                                <SlotClone tabIndex={-1} data-orientation="horizontal" onMouseDown={function handleEvent} ...>
+                                  <Primitive.button type="button" role="tab" aria-selected={true} ...>
+                                    <button
+                                      type="button"
+                                      role="tab"
+                                      aria-selected={true}
++                                     aria-controls="radix-_R_1a5esndlb_-content-daily"
+-                                     aria-controls="radix-_R_595esndlb_-content-daily"
+                                      data-state="active"
+                                      data-disabled={undefined}
+                                      disabled={false}
++                                     id="radix-_R_1a5esndlb_-trigger-daily"
+-                                     id="radix-_R_595esndlb_-trigger-daily"
+                                      data-slot="tabs-trigger"
+                                      className={"data-[state=active]:bg-background dark:data-[state=active]:text-for..."}
+                                      onMouseDown={function}
+                                      onKeyDown={function}
+                                      onFocus={function}
+                                      tabIndex={-1}
+                                      data-orientation="horizontal"
+                                      data-radix-collection-item=""
+                                      ref={function}
+                                    >
+                            ...
+                              <Slot tabIndex={-1} data-orientation="horizontal" onMouseDown={function handleEvent} ...>
+                                <SlotClone tabIndex={-1} data-orientation="horizontal" onMouseDown={function handleEvent} ...>
+                                  <Primitive.button type="button" role="tab" aria-selected={false} ...>
+                                    <button
+                                      type="button"
+                                      role="tab"
+                                      aria-selected={false}
++                                     aria-controls="radix-_R_1a5esndlb_-content-weekly"
+-                                     aria-controls="radix-_R_595esndlb_-content-weekly"
+                                      data-state="inactive"
+                                      data-disabled={undefined}
+                                      disabled={false}
++                                     id="radix-_R_1a5esndlb_-trigger-weekly"
+-                                     id="radix-_R_595esndlb_-trigger-weekly"
+                                      data-slot="tabs-trigger"
+                                      className={"data-[state=active]:bg-background dark:data-[state=active]:text-for..."}
+                                      onMouseDown={function}
+                                      onKeyDown={function}
+                                      onFocus={function}
+                                      tabIndex={-1}
+                                      data-orientation="horizontal"
+                                      data-radix-collection-item=""
+                                      ref={function}
+                                    >
+                            ...
+                              <Slot tabIndex={-1} data-orientation="horizontal" onMouseDown={function handleEvent} ...>
+                                <SlotClone tabIndex={-1} data-orientation="horizontal" onMouseDown={function handleEvent} ...>
+                                  <Primitive.button type="button" role="tab" aria-selected={false} ...>
+                                    <button
+                                      type="button"
+                                      role="tab"
+                                      aria-selected={false}
++                                     aria-controls="radix-_R_1a5esndlb_-content-monthly"
+-                                     aria-controls="radix-_R_595esndlb_-content-monthly"
+                                      data-state="inactive"
+                                      data-disabled={undefined}
+                                      disabled={false}
++                                     id="radix-_R_1a5esndlb_-trigger-monthly"
+-                                     id="radix-_R_595esndlb_-trigger-monthly"
+                                      data-slot="tabs-trigger"
+                                      className={"data-[state=active]:bg-background dark:data-[state=active]:text-for..."}
+                                      onMouseDown={function}
+                                      onKeyDown={function}
+                                      onFocus={function}
+                                      tabIndex={-1}
+                                      data-orientation="horizontal"
+                                      data-radix-collection-item=""
+                                      ref={function}
+                                    >
+                        <TabsContent value="daily" className="mt-4 sm:mt...">
+                          <TabsContent data-slot="tabs-content" className="flex-1 out..." value="daily">
+                            <Presence present={true}>
+                              <Primitive.div data-state="active" data-orientation="horizontal" role="tabpanel" ...>
+                                <div
+                                  data-state="active"
+                                  data-orientation="horizontal"
+                                  role="tabpanel"
++                                 aria-labelledby="radix-_R_1a5esndlb_-trigger-daily"
+-                                 aria-labelledby="radix-_R_595esndlb_-trigger-daily"
+                                  hidden={false}
++                                 id="radix-_R_1a5esndlb_-content-daily"
+-                                 id="radix-_R_595esndlb_-content-daily"
+                                  tabIndex={0}
+                                  data-slot="tabs-content"
+                                  className="flex-1 outline-none mt-4 sm:mt-6 space-y-4 sm:space-y-6"
+                                  style={{animationDuration:"0s"}}
+                                  ref={function}
+                                >
+                                  ...
+                                    <Slot ref={function}>
+                                      <SlotClone ref={function}>
+                                        <Primitive.button type="button" role="combobox" aria-controls="radix-_R_4..." ...>
+                                          <button
+                                            type="button"
+                                            role="combobox"
++                                           aria-controls="radix-_R_4ra5esndlb_"
+-                                           aria-controls="radix-_R_jd95esndlb_"
+                                            aria-expanded={false}
+                                            aria-required={undefined}
+                                            aria-autocomplete="none"
+                                            dir="ltr"
+                                            data-state="closed"
+                                            disabled={false}
+                                            data-disabled={undefined}
+                                            data-placeholder={undefined}
+                                            data-slot="select-trigger"
+                                            data-size="default"
+                                            className={"border-input data-[placeholder]:text-muted-foreground [&_svg:..."}
+                                            onClick={function handleEvent}
+                                            onPointerDown={function handleEvent}
+                                            onKeyDown={function handleEvent}
+                                            ref={function}
+                                          >
+                                  <p>
+                                  ...
+                                    <Slot type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                                      <SlotClone type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                                        <Button variant="outline" size="sm" className="min-w-[180px]" type="button" ...>
+                                          <button
+                                            data-slot="popover-trigger"
+                                            className={"inline-flex items-center justify-center whitespace-nowrap tex..."}
+                                            type="button"
+                                            aria-haspopup="dialog"
+                                            aria-expanded={false}
++                                           aria-controls="radix-_R_1ra5esndlb_"
+-                                           aria-controls="radix-_R_7d95esndlb_"
+                                            data-state="closed"
+                                            onClick={function handleEvent}
+                                            ref={function}
+                                          >
++                                           All Activities
+                                  ...
+              ...
+
+[00:00:26.122] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:26.122] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[00:00:26.122] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766374279134}
+[00:02:15.383] Server  LOG      ✓ Compiled in 784ms
+[00:02:15.491] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-client] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:02:15.492] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-ssr] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:02:32.602] Server  ERROR    ⨯ ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-client] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+
+
+
+./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-ssr] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+
+
+[00:02:32.731] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-client] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:02:32.731] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-ssr] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:02:33.915] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-client] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:02:33.915] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-ssr] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:02:34.231] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-client] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:02:34.231] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-ssr] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:02:36.104] Browser ERROR   uncaughtError: Error: ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-client] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+
+
+[00:02:36.270] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-client] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:02:36.270] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-ssr] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:02:36.381] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-client] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:02:36.381] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-ssr] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:03:42.935] Server  ERROR    ⨯ ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-client] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+
+
+
+./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-ssr] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+
+
+[00:03:43.290] Browser ERROR   uncaughtError: Error: ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-client] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+
+
+[00:03:43.464] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-client] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:03:43.464] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-ssr] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:03:43.464] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-client] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:03:43.464] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-ssr] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:03:52.839] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-client] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:03:52.839] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-ssr] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:04:25.819] Server  ERROR    ⨯ ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-client] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+
+
+
+./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-ssr] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+
+
+[00:04:26.144] Browser ERROR   uncaughtError: Error: ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-client] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+
+
+[00:04:26.287] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-client] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:04:26.287] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-ssr] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:04:26.396] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-client] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:04:26.396] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-ssr] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:06:13.285] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-client] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:06:13.285] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-ssr] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:06:13.672] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-client] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:06:13.672] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-ssr] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:06:13.793] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-client] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:06:13.793] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-ssr] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:07:09.058] Server  ERROR    ⨯ ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-client] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+
+
+
+./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-ssr] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+
+
+[00:07:09.385] Browser ERROR   uncaughtError: Error: ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-client] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+
+
+[00:07:09.564] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-client] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:07:09.564] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-ssr] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:07:09.564] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-client] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:07:09.564] Browser ERROR   ./staff-activity-tracker/app/dashboard/DashboardClient.tsx:4:1
+Export default doesn't exist in target module
+  2 |
+  3 | import { DashboardLayout } from "@/components/dashboard-layout"
+> 4 | import DashboardContent from "@/components/dashboard-content"
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import type { Staff, DailyRecord } from "@/lib/types"
+  6 |
+  7 | interface DashboardClientProps {
+
+The export default was not found in module [project]/staff-activity-tracker/components/dashboard-content.tsx [app-ssr] (ecmascript).
+Did you mean to import DashboardContent?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Server Component:
+    ./staff-activity-tracker/app/dashboard/DashboardClient.tsx
+    ./staff-activity-tracker/app/dashboard/page.tsx
+[00:07:41.637] Server  LOG      ✓ Compiled in 197ms
+[00:07:45.154] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:46.567] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:07:46.567] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[00:07:46.567] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766374719602}
+[00:08:05.899] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:07.107] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:08:07.107] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[00:08:07.107] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766374740136}
+[00:08:21.298] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:22.201] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <div className="min-h-scre...">
+      <aside>
+      <header>
+      <div className="lg:pl-64">
+        ...
+          <DropdownMenuTrigger asChild={true}>
+            <DropdownMenuTrigger data-slot="dropdown-m..." asChild={true}>
+              <MenuAnchor asChild={true} __scopeMenu={{Menu:[...], ...}}>
+                <PopperAnchor __scopePopper={{Menu:[...], ...}} asChild={true} ref={null}>
+                  <Primitive.div asChild={true} ref={function}>
+                    <Slot ref={function}>
+                      <SlotClone ref={function}>
+                        <Primitive.button type="button" id="radix-_R_6..." aria-haspopup="menu" aria-expanded={false} ...>
+                          <Slot type="button" id="radix-_R_6..." aria-haspopup="menu" aria-expanded={false} ...>
+                            <SlotClone type="button" id="radix-_R_6..." aria-haspopup="menu" aria-expanded={false} ...>
+                              <Button variant="ghost" className="gap-2" type="button" id="radix-_R_6..." ...>
+                                <button
+                                  data-slot="dropdown-menu-trigger"
+                                  className={"inline-flex items-center justify-center whitespace-nowrap rounded-md te..."}
+                                  type="button"
++                                 id="radix-_R_65esndlb_"
+-                                 id="radix-_R_p5esndlb_"
+                                  aria-haspopup="menu"
+                                  aria-expanded={false}
+                                  aria-controls={undefined}
+                                  data-state="closed"
+                                  data-disabled={undefined}
+                                  disabled={false}
+                                  onPointerDown={function handleEvent}
+                                  onKeyDown={function handleEvent}
+                                  ref={function}
+                                >
+          ...
+        <main className="p-4 lg:p-6">
+          <DashboardContent staff={[...]} initialRecords={[...]} trendRecords={[...]}>
+            <div className="space-y-6">
+              ...
+                <SelectProvider scope={undefined} onNativeOptionAdd={function Select.useCallback} ...>
+                  <SelectTrigger className="w-full sm:...">
+                    <SelectTrigger data-slot="select-tri..." data-size="default" className={"border-i..."}>
+                      <PopperAnchor asChild={true} __scopePopper={{Popper:[...]}}>
+                        <Primitive.div asChild={true} ref={function}>
+                          <Slot ref={function}>
+                            <SlotClone ref={function}>
+                              <Primitive.button type="button" role="combobox" aria-controls="radix-_R_c..." ...>
+                                <button
+                                  type="button"
+                                  role="combobox"
++                                 aria-controls="radix-_R_cq5esndlb_"
+-                                 aria-controls="radix-_R_1j95esndlb_"
+                                  aria-expanded={false}
+                                  aria-required={undefined}
+                                  aria-autocomplete="none"
+                                  dir="ltr"
+                                  data-state="closed"
+                                  disabled={false}
+                                  data-disabled={undefined}
+                                  data-placeholder={undefined}
+                                  data-slot="select-trigger"
+                                  data-size="default"
+                                  className={"border-input data-[placeholder]:text-muted-foreground [&_svg:not([class..."}
+                                  onClick={function handleEvent}
+                                  onPointerDown={function handleEvent}
+                                  onKeyDown={function handleEvent}
+                                  ref={function}
+                                >
+                  ...
+              <Tabs value="daily" onValueChange={function onValueChange}>
+                <Tabs data-slot="tabs" className="flex flex-..." value="daily" onValueChange={function onValueChange}>
+                  <TabsProvider scope={undefined} baseId="radix-_R_1..." value="daily" ...>
+                    <Primitive.div dir="ltr" data-orientation="horizontal" data-slot="tabs" className="flex flex-..." ...>
+                      <div dir="ltr" data-orientation="horizontal" data-slot="tabs" className="flex flex-..." ref={null}>
+                        ...
+                          <div role="tablist" aria-orientation="horizontal" data-slot="tabs-list" ...>
+                            ...
+                              <Slot tabIndex={-1} data-orientation="horizontal" onMouseDown={function handleEvent} ...>
+                                <SlotClone tabIndex={-1} data-orientation="horizontal" onMouseDown={function handleEvent} ...>
+                                  <Primitive.button type="button" role="tab" aria-selected={true} ...>
+                                    <button
+                                      type="button"
+                                      role="tab"
+                                      aria-selected={true}
++                                     aria-controls="radix-_R_1a5esndlb_-content-daily"
+-                                     aria-controls="radix-_R_595esndlb_-content-daily"
+                                      data-state="active"
+                                      data-disabled={undefined}
+                                      disabled={false}
++                                     id="radix-_R_1a5esndlb_-trigger-daily"
+-                                     id="radix-_R_595esndlb_-trigger-daily"
+                                      data-slot="tabs-trigger"
+                                      className={"data-[state=active]:bg-background dark:data-[state=active]:text-for..."}
+                                      onMouseDown={function}
+                                      onKeyDown={function}
+                                      onFocus={function}
+                                      tabIndex={-1}
+                                      data-orientation="horizontal"
+                                      data-radix-collection-item=""
+                                      ref={function}
+                                    >
+                            ...
+                              <Slot tabIndex={-1} data-orientation="horizontal" onMouseDown={function handleEvent} ...>
+                                <SlotClone tabIndex={-1} data-orientation="horizontal" onMouseDown={function handleEvent} ...>
+                                  <Primitive.button type="button" role="tab" aria-selected={false} ...>
+                                    <button
+                                      type="button"
+                                      role="tab"
+                                      aria-selected={false}
++                                     aria-controls="radix-_R_1a5esndlb_-content-weekly"
+-                                     aria-controls="radix-_R_595esndlb_-content-weekly"
+                                      data-state="inactive"
+                                      data-disabled={undefined}
+                                      disabled={false}
++                                     id="radix-_R_1a5esndlb_-trigger-weekly"
+-                                     id="radix-_R_595esndlb_-trigger-weekly"
+                                      data-slot="tabs-trigger"
+                                      className={"data-[state=active]:bg-background dark:data-[state=active]:text-for..."}
+                                      onMouseDown={function}
+                                      onKeyDown={function}
+                                      onFocus={function}
+                                      tabIndex={-1}
+                                      data-orientation="horizontal"
+                                      data-radix-collection-item=""
+                                      ref={function}
+                                    >
+                            ...
+                              <Slot tabIndex={-1} data-orientation="horizontal" onMouseDown={function handleEvent} ...>
+                                <SlotClone tabIndex={-1} data-orientation="horizontal" onMouseDown={function handleEvent} ...>
+                                  <Primitive.button type="button" role="tab" aria-selected={false} ...>
+                                    <button
+                                      type="button"
+                                      role="tab"
+                                      aria-selected={false}
++                                     aria-controls="radix-_R_1a5esndlb_-content-monthly"
+-                                     aria-controls="radix-_R_595esndlb_-content-monthly"
+                                      data-state="inactive"
+                                      data-disabled={undefined}
+                                      disabled={false}
++                                     id="radix-_R_1a5esndlb_-trigger-monthly"
+-                                     id="radix-_R_595esndlb_-trigger-monthly"
+                                      data-slot="tabs-trigger"
+                                      className={"data-[state=active]:bg-background dark:data-[state=active]:text-for..."}
+                                      onMouseDown={function}
+                                      onKeyDown={function}
+                                      onFocus={function}
+                                      tabIndex={-1}
+                                      data-orientation="horizontal"
+                                      data-radix-collection-item=""
+                                      ref={function}
+                                    >
+                        <TabsContent value="daily" className="mt-4 sm:mt...">
+                          <TabsContent data-slot="tabs-content" className="flex-1 out..." value="daily">
+                            <Presence present={true}>
+                              <Primitive.div data-state="active" data-orientation="horizontal" role="tabpanel" ...>
+                                <div
+                                  data-state="active"
+                                  data-orientation="horizontal"
+                                  role="tabpanel"
++                                 aria-labelledby="radix-_R_1a5esndlb_-trigger-daily"
+-                                 aria-labelledby="radix-_R_595esndlb_-trigger-daily"
+                                  hidden={false}
++                                 id="radix-_R_1a5esndlb_-content-daily"
+-                                 id="radix-_R_595esndlb_-content-daily"
+                                  tabIndex={0}
+                                  data-slot="tabs-content"
+                                  className="flex-1 outline-none mt-4 sm:mt-6 space-y-4 sm:space-y-6"
+                                  style={{animationDuration:"0s"}}
+                                  ref={function}
+                                >
+                                  ...
+                                    <Slot ref={function}>
+                                      <SlotClone ref={function}>
+                                        <Primitive.button type="button" role="combobox" aria-controls="radix-_R_4..." ...>
+                                          <button
+                                            type="button"
+                                            role="combobox"
++                                           aria-controls="radix-_R_4ra5esndlb_"
+-                                           aria-controls="radix-_R_jd95esndlb_"
+                                            aria-expanded={false}
+                                            aria-required={undefined}
+                                            aria-autocomplete="none"
+                                            dir="ltr"
+                                            data-state="closed"
+                                            disabled={false}
+                                            data-disabled={undefined}
+                                            data-placeholder={undefined}
+                                            data-slot="select-trigger"
+                                            data-size="default"
+                                            className={"border-input data-[placeholder]:text-muted-foreground [&_svg:..."}
+                                            onClick={function handleEvent}
+                                            onPointerDown={function handleEvent}
+                                            onKeyDown={function handleEvent}
+                                            ref={function}
+                                          >
+                                  <p>
+                                  ...
+                                    <Slot type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                                      <SlotClone type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                                        <Button variant="outline" size="sm" className="min-w-[180px]" type="button" ...>
+                                          <button
+                                            data-slot="popover-trigger"
+                                            className={"inline-flex items-center justify-center whitespace-nowrap tex..."}
+                                            type="button"
+                                            aria-haspopup="dialog"
+                                            aria-expanded={false}
++                                           aria-controls="radix-_R_1ra5esndlb_"
+-                                           aria-controls="radix-_R_7d95esndlb_"
+                                            data-state="closed"
+                                            onClick={function handleEvent}
+                                            ref={function}
+                                          >
++                                           All Activities
+                                  ...
+              ...
+
+[00:08:22.369] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:08:22.369] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[00:08:22.369] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766374755393}
+[00:09:15.032] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:15.929] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:09:15.929] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[00:09:15.929] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766374808966}
+[00:18:15.484] Server  LOG      ✓ Compiled in 8s
+[00:19:40.189] Server  ERROR    ⨯ ./staff-activity-tracker/app/staff/page.tsx:17:1
+Parsing ecmascript source code failed
+  15 |   }
+  16 |
+> 17 | <<<<<<< HEAD
+     | ^^^^^^^
+  18 |   // Fetch staff for this admin only
+  19 |   const { data: staff = [] } = await supabase.from("staff").select("*").eq("admin_id", user.id)
+  20 | =======
+
+Merge conflict marker encountered.
+
+
+
+./staff-activity-tracker/app/staff/page.tsx:20:1
+Parsing ecmascript source code failed
+  18 |   // Fetch staff for this admin only
+  19 |   const { data: staff = [] } = await supabase.from("staff").select("*").eq("admin_id", user.id)
+> 20 | =======
+     | ^^^^^^^
+  21 |   // Fetch staff for the current user only
+  22 |   const { data: staff = [] } = await supabase
+  23 |     .from("staff")
+
+Merge conflict marker encountered.
+
+
+
+./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+
+
+[00:19:40.288] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:19:40.473] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:19:40.674] Server  ERROR    ⨯ ./staff-activity-tracker/app/staff/page.tsx:17:1
+Parsing ecmascript source code failed
+  15 |   }
+  16 |
+> 17 | <<<<<<< HEAD
+     | ^^^^^^^
+  18 |   // Fetch staff for this admin only
+  19 |   const { data: staff = [] } = await supabase.from("staff").select("*").eq("admin_id", user.id)
+  20 | =======
+
+Merge conflict marker encountered.
+
+
+
+./staff-activity-tracker/app/staff/page.tsx:20:1
+Parsing ecmascript source code failed
+  18 |   // Fetch staff for this admin only
+  19 |   const { data: staff = [] } = await supabase.from("staff").select("*").eq("admin_id", user.id)
+> 20 | =======
+     | ^^^^^^^
+  21 |   // Fetch staff for the current user only
+  22 |   const { data: staff = [] } = await supabase
+  23 |     .from("staff")
+
+Merge conflict marker encountered.
+
+
+
+./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+
+
+[00:19:41.113] Browser ERROR   uncaughtError: Error: ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+
+
+[00:19:41.318] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:19:41.318] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:19:49.088] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:19:50.666] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:50.841] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:19:51.004] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:19:51.515] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+>>>>>>> a905768c60541c77639511f11bd8e71fdd68e848
 
 - A server/client branch `if (typeof window !== 'undefined')`.
 - Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
@@ -122,6 +1598,7 @@ It can also happen if the client has a browser extension installed which messes 
             <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
               <RedirectBoundary>
                 <RedirectErrorBoundary router={{...}}>
+<<<<<<< HEAD
                   <Head headCacheNode={{lazyData:null, ...}}>
                     <__next_viewport_boundary__>
                     <Next.Metadata>
@@ -132,6 +1609,10 @@ It can also happen if the client has a browser extension installed which messes 
                     ...
                   <__next_root_layout_boundary__>
                     <SegmentViewNode type="layout" pagePath="layout.tsx">
+=======
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/staff-act...">
                       <SegmentTrieNode>
                       <link>
                       <script>
@@ -141,6 +1622,280 @@ It can also happen if the client has a browser extension installed which messes 
                         <html lang="en">
                           <body
                             className="font-sans antialiased"
+-                           style={{padding-right:"15px",overflow-x:"hidden",overflow-y:"hidden"}}
+                          >
+                  ...
+
+[00:19:52.294] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:19:52.294] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[00:19:52.294] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766375445331}
+[00:19:52.941] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:21:55.387] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:21:55.388] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:21:55.388] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:21:55.388] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:21:55.388] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:21:55.600] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:21:55.600] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:22:38.398] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:22:38.698] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:22:38.698] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:22:39.000] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:25:09.756] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:25:09.971] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:25:09.971] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:25:09.971] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:25:10.077] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:25:10.272] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:25:41.340] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:25:42.763] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:25:42.890] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:25:43.128] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:25:43.634] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/staff-act...">
+>>>>>>> a905768c60541c77639511f11bd8e71fdd68e848
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="font-sans antialiased"
+<<<<<<< HEAD
 -                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6Im5pbWxtZWpibW5lY25hZ2hnbWJhaG1iYWRk..."
 -                           style={{padding-right:"15px",overflow-x:"hidden",overflow-y:"hidden"}}
                           >
@@ -603,3 +2358,546 @@ Import trace:
 [00:01:41.206] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/staff color: rgb(120, 120, 120) color: inherit {"dp":"/staff","o":"http://localhost:3000/staff","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766401325065}
 [00:02:14.397] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766401358111}
 [00:02:21.137] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/staff color: rgb(120, 120, 120) color: inherit {"dp":"/staff","o":"http://localhost:3000/staff","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766401364993}
+=======
+-                           style={{padding-right:"15px",overflow-x:"hidden",overflow-y:"hidden"}}
+                          >
+                            ...
+                              <div className="lg:pl-64">
+                                ...
+                                  <Slot type="button" id="radix-_R_6..." aria-haspopup="menu" aria-expanded={false} ...>
+                                    <SlotClone type="button" id="radix-_R_6..." aria-haspopup="menu" ...>
+                                      <Button variant="ghost" className="gap-2" type="button" id="radix-_R_6..." ...>
+                                        <button
+                                          data-slot="dropdown-menu-trigger"
+                                          className={"inline-flex items-center justify-center whitespace-nowrap round..."}
+                                          type="button"
++                                         id="radix-_R_65esndlb_"
+-                                         id="radix-_R_p5esndlb_"
+                                          aria-haspopup="menu"
+                                          aria-expanded={false}
+                                          aria-controls={undefined}
+                                          data-state="closed"
+                                          data-disabled={undefined}
+                                          disabled={false}
+                                          onPointerDown={function handleEvent}
+                                          onKeyDown={function handleEvent}
+                                          ref={function}
+                                        >
+                                ...
+                                  <div className="space-y-6">
+                                    ...
+                                      <Slot ref={function}>
+                                        <SlotClone ref={function}>
+                                          <Primitive.button type="button" role="combobox" aria-controls="radix-_R_c..." ...>
+                                            <button
+                                              type="button"
+                                              role="combobox"
++                                             aria-controls="radix-_R_cq5esndlb_"
+-                                             aria-controls="radix-_R_1j95esndlb_"
+                                              aria-expanded={false}
+                                              aria-required={undefined}
+                                              aria-autocomplete="none"
+                                              dir="ltr"
+                                              data-state="closed"
+                                              disabled={false}
+                                              data-disabled={undefined}
+                                              data-placeholder={undefined}
+                                              data-slot="select-trigger"
+                                              data-size="default"
+                                              className={"border-input data-[placeholder]:text-muted-foreground [&_sv..."}
+                                              onClick={function handleEvent}
+                                              onPointerDown={function handleEvent}
+                                              onKeyDown={function handleEvent}
+                                              ref={function}
+                                            >
+                                    ...
+                                      <div dir="ltr" data-orientation="horizontal" data-slot="tabs" ...>
+                                        ...
+                                          <div role="tablist" aria-orientation="horizontal" data-slot="tabs-list" ...>
+                                            ...
+                                              <Slot tabIndex={-1} data-orientation="horizontal" ...>
+                                                <SlotClone tabIndex={-1} data-orientation="horizontal" ...>
+                                                  <Primitive.button type="button" role="tab" aria-selected={true} ...>
+                                                    <button
+                                                      type="button"
+                                                      role="tab"
+                                                      aria-selected={true}
++                                                     aria-controls="radix-_R_1a5esndlb_-content-daily"
+-                                                     aria-controls="radix-_R_595esndlb_-content-daily"
+                                                      data-state="active"
+                                                      data-disabled={undefined}
+                                                      disabled={false}
++                                                     id="radix-_R_1a5esndlb_-trigger-daily"
+-                                                     id="radix-_R_595esndlb_-trigger-daily"
+                                                      data-slot="tabs-trigger"
+                                                      className={"data-[state=active]:bg-background dark:data-[state=..."}
+                                                      onMouseDown={function}
+                                                      onKeyDown={function}
+                                                      onFocus={function}
+                                                      tabIndex={-1}
+                                                      data-orientation="horizontal"
+                                                      data-radix-collection-item=""
+                                                      ref={function}
+                                                    >
+                                            ...
+                                              <Slot tabIndex={-1} data-orientation="horizontal" ...>
+                                                <SlotClone tabIndex={-1} data-orientation="horizontal" ...>
+                                                  <Primitive.button type="button" role="tab" aria-selected={false} ...>
+                                                    <button
+                                                      type="button"
+                                                      role="tab"
+                                                      aria-selected={false}
++                                                     aria-controls="radix-_R_1a5esndlb_-content-weekly"
+-                                                     aria-controls="radix-_R_595esndlb_-content-weekly"
+                                                      data-state="inactive"
+                                                      data-disabled={undefined}
+                                                      disabled={false}
++                                                     id="radix-_R_1a5esndlb_-trigger-weekly"
+-                                                     id="radix-_R_595esndlb_-trigger-weekly"
+                                                      data-slot="tabs-trigger"
+                                                      className={"data-[state=active]:bg-background dark:data-[state=..."}
+                                                      onMouseDown={function}
+                                                      onKeyDown={function}
+                                                      onFocus={function}
+                                                      tabIndex={-1}
+                                                      data-orientation="horizontal"
+                                                      data-radix-collection-item=""
+                                                      ref={function}
+                                                    >
+                                            ...
+                                              <Slot tabIndex={-1} data-orientation="horizontal" ...>
+                                                <SlotClone tabIndex={-1} data-orientation="horizontal" ...>
+                                                  <Primitive.button type="button" role="tab" aria-selected={false} ...>
+                                                    <button
+                                                      type="button"
+                                                      role="tab"
+                                                      aria-selected={false}
++                                                     aria-controls="radix-_R_1a5esndlb_-content-monthly"
+-                                                     aria-controls="radix-_R_595esndlb_-content-monthly"
+                                                      data-state="inactive"
+                                                      data-disabled={undefined}
+                                                      disabled={false}
++                                                     id="radix-_R_1a5esndlb_-trigger-monthly"
+-                                                     id="radix-_R_595esndlb_-trigger-monthly"
+                                                      data-slot="tabs-trigger"
+                                                      className={"data-[state=active]:bg-background dark:data-[state=..."}
+                                                      onMouseDown={function}
+                                                      onKeyDown={function}
+                                                      onFocus={function}
+                                                      tabIndex={-1}
+                                                      data-orientation="horizontal"
+                                                      data-radix-collection-item=""
+                                                      ref={function}
+                                                    >
+                                        <TabsContent value="daily" className="mt-4 sm:mt...">
+                                          <TabsContent data-slot="tabs-content" className="flex-1 out..." value="daily">
+                                            <Presence present={true}>
+                                              <Primitive.div data-state="active" data-orientation="horizontal" ...>
+                                                <div
+                                                  data-state="active"
+                                                  data-orientation="horizontal"
+                                                  role="tabpanel"
++                                                 aria-labelledby="radix-_R_1a5esndlb_-trigger-daily"
+-                                                 aria-labelledby="radix-_R_595esndlb_-trigger-daily"
+                                                  hidden={false}
++                                                 id="radix-_R_1a5esndlb_-content-daily"
+-                                                 id="radix-_R_595esndlb_-content-daily"
+                                                  tabIndex={0}
+                                                  data-slot="tabs-content"
+                                                  className="flex-1 outline-none mt-4 sm:mt-6 space-y-4 sm:space-y-6"
+                                                  style={{animationDuration:"0s"}}
+                                                  ref={function}
+                                                >
+                                                  ...
+                                                    <Slot ref={function}>
+                                                      <SlotClone ref={function}>
+                                                        <Primitive.button type="button" role="combobox" ...>
+                                                          <button
+                                                            type="button"
+                                                            role="combobox"
++                                                           aria-controls="radix-_R_4ra5esndlb_"
+-                                                           aria-controls="radix-_R_jd95esndlb_"
+                                                            aria-expanded={false}
+                                                            aria-required={undefined}
+                                                            aria-autocomplete="none"
+                                                            dir="ltr"
+                                                            data-state="closed"
+                                                            disabled={false}
+                                                            data-disabled={undefined}
+                                                            data-placeholder={undefined}
+                                                            data-slot="select-trigger"
+                                                            data-size="default"
+                                                            className={"border-input data-[placeholder]:text-muted-fo..."}
+                                                            onClick={function handleEvent}
+                                                            onPointerDown={function handleEvent}
+                                                            onKeyDown={function handleEvent}
+                                                            ref={function}
+                                                          >
+                                                  <p>
+                                                  ...
+                                                    <Slot type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                                                      <SlotClone type="button" aria-haspopup="dialog" ...>
+                                                        <Button variant="outline" size="sm" className="min-w-[180px]" ...>
+                                                          <button
+                                                            data-slot="popover-trigger"
+                                                            className={"inline-flex items-center justify-center white..."}
+                                                            type="button"
+                                                            aria-haspopup="dialog"
+                                                            aria-expanded={false}
++                                                           aria-controls="radix-_R_1ra5esndlb_"
+-                                                           aria-controls="radix-_R_7d95esndlb_"
+                                                            data-state="closed"
+                                                            onClick={function handleEvent}
+                                                            ref={function}
+                                                          >
++                                                           All Activities
+                                                  ...
+                                    ...
+                            ...
+                  ...
+
+[00:25:43.778] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:25:43.778] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[00:25:43.778] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766375796804}
+[00:27:26.027] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:27:27.540] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:27.697] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:27:27.967] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:27:28.403] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/staff-act...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="font-sans antialiased"
+-                           style={{padding-right:"15px",overflow-x:"hidden",overflow-y:"hidden"}}
+                          >
+                            ...
+                              <div className="lg:pl-64">
+                                ...
+                                  <Slot type="button" id="radix-_R_6..." aria-haspopup="menu" aria-expanded={false} ...>
+                                    <SlotClone type="button" id="radix-_R_6..." aria-haspopup="menu" ...>
+                                      <Button variant="ghost" className="gap-2" type="button" id="radix-_R_6..." ...>
+                                        <button
+                                          data-slot="dropdown-menu-trigger"
+                                          className={"inline-flex items-center justify-center whitespace-nowrap round..."}
+                                          type="button"
++                                         id="radix-_R_65esndlb_"
+-                                         id="radix-_R_p5esndlb_"
+                                          aria-haspopup="menu"
+                                          aria-expanded={false}
+                                          aria-controls={undefined}
+                                          data-state="closed"
+                                          data-disabled={undefined}
+                                          disabled={false}
+                                          onPointerDown={function handleEvent}
+                                          onKeyDown={function handleEvent}
+                                          ref={function}
+                                        >
+                                ...
+                                  <div className="space-y-6">
+                                    ...
+                                      <Slot ref={function}>
+                                        <SlotClone ref={function}>
+                                          <Primitive.button type="button" role="combobox" aria-controls="radix-_R_c..." ...>
+                                            <button
+                                              type="button"
+                                              role="combobox"
++                                             aria-controls="radix-_R_cq5esndlb_"
+-                                             aria-controls="radix-_R_1j95esndlb_"
+                                              aria-expanded={false}
+                                              aria-required={undefined}
+                                              aria-autocomplete="none"
+                                              dir="ltr"
+                                              data-state="closed"
+                                              disabled={false}
+                                              data-disabled={undefined}
+                                              data-placeholder={undefined}
+                                              data-slot="select-trigger"
+                                              data-size="default"
+                                              className={"border-input data-[placeholder]:text-muted-foreground [&_sv..."}
+                                              onClick={function handleEvent}
+                                              onPointerDown={function handleEvent}
+                                              onKeyDown={function handleEvent}
+                                              ref={function}
+                                            >
+                                    ...
+                                      <div dir="ltr" data-orientation="horizontal" data-slot="tabs" ...>
+                                        ...
+                                          <div role="tablist" aria-orientation="horizontal" data-slot="tabs-list" ...>
+                                            ...
+                                              <Slot tabIndex={-1} data-orientation="horizontal" ...>
+                                                <SlotClone tabIndex={-1} data-orientation="horizontal" ...>
+                                                  <Primitive.button type="button" role="tab" aria-selected={true} ...>
+                                                    <button
+                                                      type="button"
+                                                      role="tab"
+                                                      aria-selected={true}
++                                                     aria-controls="radix-_R_1a5esndlb_-content-daily"
+-                                                     aria-controls="radix-_R_595esndlb_-content-daily"
+                                                      data-state="active"
+                                                      data-disabled={undefined}
+                                                      disabled={false}
++                                                     id="radix-_R_1a5esndlb_-trigger-daily"
+-                                                     id="radix-_R_595esndlb_-trigger-daily"
+                                                      data-slot="tabs-trigger"
+                                                      className={"data-[state=active]:bg-background dark:data-[state=..."}
+                                                      onMouseDown={function}
+                                                      onKeyDown={function}
+                                                      onFocus={function}
+                                                      tabIndex={-1}
+                                                      data-orientation="horizontal"
+                                                      data-radix-collection-item=""
+                                                      ref={function}
+                                                    >
+                                            ...
+                                              <Slot tabIndex={-1} data-orientation="horizontal" ...>
+                                                <SlotClone tabIndex={-1} data-orientation="horizontal" ...>
+                                                  <Primitive.button type="button" role="tab" aria-selected={false} ...>
+                                                    <button
+                                                      type="button"
+                                                      role="tab"
+                                                      aria-selected={false}
++                                                     aria-controls="radix-_R_1a5esndlb_-content-weekly"
+-                                                     aria-controls="radix-_R_595esndlb_-content-weekly"
+                                                      data-state="inactive"
+                                                      data-disabled={undefined}
+                                                      disabled={false}
++                                                     id="radix-_R_1a5esndlb_-trigger-weekly"
+-                                                     id="radix-_R_595esndlb_-trigger-weekly"
+                                                      data-slot="tabs-trigger"
+                                                      className={"data-[state=active]:bg-background dark:data-[state=..."}
+                                                      onMouseDown={function}
+                                                      onKeyDown={function}
+                                                      onFocus={function}
+                                                      tabIndex={-1}
+                                                      data-orientation="horizontal"
+                                                      data-radix-collection-item=""
+                                                      ref={function}
+                                                    >
+                                            ...
+                                              <Slot tabIndex={-1} data-orientation="horizontal" ...>
+                                                <SlotClone tabIndex={-1} data-orientation="horizontal" ...>
+                                                  <Primitive.button type="button" role="tab" aria-selected={false} ...>
+                                                    <button
+                                                      type="button"
+                                                      role="tab"
+                                                      aria-selected={false}
++                                                     aria-controls="radix-_R_1a5esndlb_-content-monthly"
+-                                                     aria-controls="radix-_R_595esndlb_-content-monthly"
+                                                      data-state="inactive"
+                                                      data-disabled={undefined}
+                                                      disabled={false}
++                                                     id="radix-_R_1a5esndlb_-trigger-monthly"
+-                                                     id="radix-_R_595esndlb_-trigger-monthly"
+                                                      data-slot="tabs-trigger"
+                                                      className={"data-[state=active]:bg-background dark:data-[state=..."}
+                                                      onMouseDown={function}
+                                                      onKeyDown={function}
+                                                      onFocus={function}
+                                                      tabIndex={-1}
+                                                      data-orientation="horizontal"
+                                                      data-radix-collection-item=""
+                                                      ref={function}
+                                                    >
+                                        <TabsContent value="daily" className="mt-4 sm:mt...">
+                                          <TabsContent data-slot="tabs-content" className="flex-1 out..." value="daily">
+                                            <Presence present={true}>
+                                              <Primitive.div data-state="active" data-orientation="horizontal" ...>
+                                                <div
+                                                  data-state="active"
+                                                  data-orientation="horizontal"
+                                                  role="tabpanel"
++                                                 aria-labelledby="radix-_R_1a5esndlb_-trigger-daily"
+-                                                 aria-labelledby="radix-_R_595esndlb_-trigger-daily"
+                                                  hidden={false}
++                                                 id="radix-_R_1a5esndlb_-content-daily"
+-                                                 id="radix-_R_595esndlb_-content-daily"
+                                                  tabIndex={0}
+                                                  data-slot="tabs-content"
+                                                  className="flex-1 outline-none mt-4 sm:mt-6 space-y-4 sm:space-y-6"
+                                                  style={{animationDuration:"0s"}}
+                                                  ref={function}
+                                                >
+                                                  ...
+                                                    <Slot ref={function}>
+                                                      <SlotClone ref={function}>
+                                                        <Primitive.button type="button" role="combobox" ...>
+                                                          <button
+                                                            type="button"
+                                                            role="combobox"
++                                                           aria-controls="radix-_R_4ra5esndlb_"
+-                                                           aria-controls="radix-_R_jd95esndlb_"
+                                                            aria-expanded={false}
+                                                            aria-required={undefined}
+                                                            aria-autocomplete="none"
+                                                            dir="ltr"
+                                                            data-state="closed"
+                                                            disabled={false}
+                                                            data-disabled={undefined}
+                                                            data-placeholder={undefined}
+                                                            data-slot="select-trigger"
+                                                            data-size="default"
+                                                            className={"border-input data-[placeholder]:text-muted-fo..."}
+                                                            onClick={function handleEvent}
+                                                            onPointerDown={function handleEvent}
+                                                            onKeyDown={function handleEvent}
+                                                            ref={function}
+                                                          >
+                                                  <p>
+                                                  ...
+                                                    <Slot type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                                                      <SlotClone type="button" aria-haspopup="dialog" ...>
+                                                        <Button variant="outline" size="sm" className="min-w-[180px]" ...>
+                                                          <button
+                                                            data-slot="popover-trigger"
+                                                            className={"inline-flex items-center justify-center white..."}
+                                                            type="button"
+                                                            aria-haspopup="dialog"
+                                                            aria-expanded={false}
++                                                           aria-controls="radix-_R_1ra5esndlb_"
+-                                                           aria-controls="radix-_R_7d95esndlb_"
+                                                            data-state="closed"
+                                                            onClick={function handleEvent}
+                                                            ref={function}
+                                                          >
++                                                           All Activities
+                                                  ...
+                                    ...
+                            ...
+                  ...
+
+[00:27:28.533] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:27:28.533] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[00:27:28.534] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766375901572}
+[00:28:24.100] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:28:25.496] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:25.606] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:28:25.882] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:28:26.296] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/staff-act...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="font-sans antialiased"
+-                           style={{padding-right:"15px",overflow-x:"hidden",overflow-y:"hidden"}}
+                          >
+                  ...
+
+[00:28:26.434] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:28:26.434] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[00:28:26.434] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766375959448}
+>>>>>>> a905768c60541c77639511f11bd8e71fdd68e848

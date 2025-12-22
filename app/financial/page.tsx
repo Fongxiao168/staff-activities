@@ -14,8 +14,8 @@ export default async function FinancialPage() {
     redirect("/auth/login")
   }
 
-  // Fetch staff
-  const { data: staff = [] } = await supabase.from("staff").select("*")
+  // Fetch staff for this admin only
+  const { data: staff = [] } = await supabase.from("staff").select("*").eq("admin_id", user.id)
 
   return (
     <DashboardLayout userEmail={user.email}>

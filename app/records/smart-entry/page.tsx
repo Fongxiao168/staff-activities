@@ -12,8 +12,8 @@ export default async function SmartEntryPage() {
     redirect("/auth/login")
   }
 
-  // Fetch staff
-  const { data: staff = [] } = await supabase.from("staff").select("*")
+  // Fetch staff for this admin only
+  const { data: staff = [] } = await supabase.from("staff").select("*").eq("admin_id", user.id)
 
   return <SmartEntryForm staff={staff} />
 }
