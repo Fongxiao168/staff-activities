@@ -1598,3 +1598,721 @@ Parsing ecmascript source code failed
   29 |     <DashboardLayout userEmail={user.email}>
 
 Merge conflict marker encountered.
+[00:22:38.398] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:22:38.698] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:22:38.698] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:22:39.000] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:25:09.756] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:25:09.971] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:25:09.971] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:25:09.971] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:25:10.077] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:25:10.272] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:25:41.340] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:25:42.763] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:25:42.890] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:25:43.128] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:25:43.634] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/staff-act...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="font-sans antialiased"
+-                           style={{padding-right:"15px",overflow-x:"hidden",overflow-y:"hidden"}}
+                          >
+                            ...
+                              <div className="lg:pl-64">
+                                ...
+                                  <Slot type="button" id="radix-_R_6..." aria-haspopup="menu" aria-expanded={false} ...>
+                                    <SlotClone type="button" id="radix-_R_6..." aria-haspopup="menu" ...>
+                                      <Button variant="ghost" className="gap-2" type="button" id="radix-_R_6..." ...>
+                                        <button
+                                          data-slot="dropdown-menu-trigger"
+                                          className={"inline-flex items-center justify-center whitespace-nowrap round..."}
+                                          type="button"
++                                         id="radix-_R_65esndlb_"
+-                                         id="radix-_R_p5esndlb_"
+                                          aria-haspopup="menu"
+                                          aria-expanded={false}
+                                          aria-controls={undefined}
+                                          data-state="closed"
+                                          data-disabled={undefined}
+                                          disabled={false}
+                                          onPointerDown={function handleEvent}
+                                          onKeyDown={function handleEvent}
+                                          ref={function}
+                                        >
+                                ...
+                                  <div className="space-y-6">
+                                    ...
+                                      <Slot ref={function}>
+                                        <SlotClone ref={function}>
+                                          <Primitive.button type="button" role="combobox" aria-controls="radix-_R_c..." ...>
+                                            <button
+                                              type="button"
+                                              role="combobox"
++                                             aria-controls="radix-_R_cq5esndlb_"
+-                                             aria-controls="radix-_R_1j95esndlb_"
+                                              aria-expanded={false}
+                                              aria-required={undefined}
+                                              aria-autocomplete="none"
+                                              dir="ltr"
+                                              data-state="closed"
+                                              disabled={false}
+                                              data-disabled={undefined}
+                                              data-placeholder={undefined}
+                                              data-slot="select-trigger"
+                                              data-size="default"
+                                              className={"border-input data-[placeholder]:text-muted-foreground [&_sv..."}
+                                              onClick={function handleEvent}
+                                              onPointerDown={function handleEvent}
+                                              onKeyDown={function handleEvent}
+                                              ref={function}
+                                            >
+                                    ...
+                                      <div dir="ltr" data-orientation="horizontal" data-slot="tabs" ...>
+                                        ...
+                                          <div role="tablist" aria-orientation="horizontal" data-slot="tabs-list" ...>
+                                            ...
+                                              <Slot tabIndex={-1} data-orientation="horizontal" ...>
+                                                <SlotClone tabIndex={-1} data-orientation="horizontal" ...>
+                                                  <Primitive.button type="button" role="tab" aria-selected={true} ...>
+                                                    <button
+                                                      type="button"
+                                                      role="tab"
+                                                      aria-selected={true}
++                                                     aria-controls="radix-_R_1a5esndlb_-content-daily"
+-                                                     aria-controls="radix-_R_595esndlb_-content-daily"
+                                                      data-state="active"
+                                                      data-disabled={undefined}
+                                                      disabled={false}
++                                                     id="radix-_R_1a5esndlb_-trigger-daily"
+-                                                     id="radix-_R_595esndlb_-trigger-daily"
+                                                      data-slot="tabs-trigger"
+                                                      className={"data-[state=active]:bg-background dark:data-[state=..."}
+                                                      onMouseDown={function}
+                                                      onKeyDown={function}
+                                                      onFocus={function}
+                                                      tabIndex={-1}
+                                                      data-orientation="horizontal"
+                                                      data-radix-collection-item=""
+                                                      ref={function}
+                                                    >
+                                            ...
+                                              <Slot tabIndex={-1} data-orientation="horizontal" ...>
+                                                <SlotClone tabIndex={-1} data-orientation="horizontal" ...>
+                                                  <Primitive.button type="button" role="tab" aria-selected={false} ...>
+                                                    <button
+                                                      type="button"
+                                                      role="tab"
+                                                      aria-selected={false}
++                                                     aria-controls="radix-_R_1a5esndlb_-content-weekly"
+-                                                     aria-controls="radix-_R_595esndlb_-content-weekly"
+                                                      data-state="inactive"
+                                                      data-disabled={undefined}
+                                                      disabled={false}
++                                                     id="radix-_R_1a5esndlb_-trigger-weekly"
+-                                                     id="radix-_R_595esndlb_-trigger-weekly"
+                                                      data-slot="tabs-trigger"
+                                                      className={"data-[state=active]:bg-background dark:data-[state=..."}
+                                                      onMouseDown={function}
+                                                      onKeyDown={function}
+                                                      onFocus={function}
+                                                      tabIndex={-1}
+                                                      data-orientation="horizontal"
+                                                      data-radix-collection-item=""
+                                                      ref={function}
+                                                    >
+                                            ...
+                                              <Slot tabIndex={-1} data-orientation="horizontal" ...>
+                                                <SlotClone tabIndex={-1} data-orientation="horizontal" ...>
+                                                  <Primitive.button type="button" role="tab" aria-selected={false} ...>
+                                                    <button
+                                                      type="button"
+                                                      role="tab"
+                                                      aria-selected={false}
++                                                     aria-controls="radix-_R_1a5esndlb_-content-monthly"
+-                                                     aria-controls="radix-_R_595esndlb_-content-monthly"
+                                                      data-state="inactive"
+                                                      data-disabled={undefined}
+                                                      disabled={false}
++                                                     id="radix-_R_1a5esndlb_-trigger-monthly"
+-                                                     id="radix-_R_595esndlb_-trigger-monthly"
+                                                      data-slot="tabs-trigger"
+                                                      className={"data-[state=active]:bg-background dark:data-[state=..."}
+                                                      onMouseDown={function}
+                                                      onKeyDown={function}
+                                                      onFocus={function}
+                                                      tabIndex={-1}
+                                                      data-orientation="horizontal"
+                                                      data-radix-collection-item=""
+                                                      ref={function}
+                                                    >
+                                        <TabsContent value="daily" className="mt-4 sm:mt...">
+                                          <TabsContent data-slot="tabs-content" className="flex-1 out..." value="daily">
+                                            <Presence present={true}>
+                                              <Primitive.div data-state="active" data-orientation="horizontal" ...>
+                                                <div
+                                                  data-state="active"
+                                                  data-orientation="horizontal"
+                                                  role="tabpanel"
++                                                 aria-labelledby="radix-_R_1a5esndlb_-trigger-daily"
+-                                                 aria-labelledby="radix-_R_595esndlb_-trigger-daily"
+                                                  hidden={false}
++                                                 id="radix-_R_1a5esndlb_-content-daily"
+-                                                 id="radix-_R_595esndlb_-content-daily"
+                                                  tabIndex={0}
+                                                  data-slot="tabs-content"
+                                                  className="flex-1 outline-none mt-4 sm:mt-6 space-y-4 sm:space-y-6"
+                                                  style={{animationDuration:"0s"}}
+                                                  ref={function}
+                                                >
+                                                  ...
+                                                    <Slot ref={function}>
+                                                      <SlotClone ref={function}>
+                                                        <Primitive.button type="button" role="combobox" ...>
+                                                          <button
+                                                            type="button"
+                                                            role="combobox"
++                                                           aria-controls="radix-_R_4ra5esndlb_"
+-                                                           aria-controls="radix-_R_jd95esndlb_"
+                                                            aria-expanded={false}
+                                                            aria-required={undefined}
+                                                            aria-autocomplete="none"
+                                                            dir="ltr"
+                                                            data-state="closed"
+                                                            disabled={false}
+                                                            data-disabled={undefined}
+                                                            data-placeholder={undefined}
+                                                            data-slot="select-trigger"
+                                                            data-size="default"
+                                                            className={"border-input data-[placeholder]:text-muted-fo..."}
+                                                            onClick={function handleEvent}
+                                                            onPointerDown={function handleEvent}
+                                                            onKeyDown={function handleEvent}
+                                                            ref={function}
+                                                          >
+                                                  <p>
+                                                  ...
+                                                    <Slot type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                                                      <SlotClone type="button" aria-haspopup="dialog" ...>
+                                                        <Button variant="outline" size="sm" className="min-w-[180px]" ...>
+                                                          <button
+                                                            data-slot="popover-trigger"
+                                                            className={"inline-flex items-center justify-center white..."}
+                                                            type="button"
+                                                            aria-haspopup="dialog"
+                                                            aria-expanded={false}
++                                                           aria-controls="radix-_R_1ra5esndlb_"
+-                                                           aria-controls="radix-_R_7d95esndlb_"
+                                                            data-state="closed"
+                                                            onClick={function handleEvent}
+                                                            ref={function}
+                                                          >
++                                                           All Activities
+                                                  ...
+                                    ...
+                            ...
+                  ...
+
+[00:25:43.778] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:25:43.778] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[00:25:43.778] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766375796804}
+[00:27:26.027] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:27:27.540] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:27.697] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:27:27.967] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:27:28.403] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/staff-act...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="font-sans antialiased"
+-                           style={{padding-right:"15px",overflow-x:"hidden",overflow-y:"hidden"}}
+                          >
+                            ...
+                              <div className="lg:pl-64">
+                                ...
+                                  <Slot type="button" id="radix-_R_6..." aria-haspopup="menu" aria-expanded={false} ...>
+                                    <SlotClone type="button" id="radix-_R_6..." aria-haspopup="menu" ...>
+                                      <Button variant="ghost" className="gap-2" type="button" id="radix-_R_6..." ...>
+                                        <button
+                                          data-slot="dropdown-menu-trigger"
+                                          className={"inline-flex items-center justify-center whitespace-nowrap round..."}
+                                          type="button"
++                                         id="radix-_R_65esndlb_"
+-                                         id="radix-_R_p5esndlb_"
+                                          aria-haspopup="menu"
+                                          aria-expanded={false}
+                                          aria-controls={undefined}
+                                          data-state="closed"
+                                          data-disabled={undefined}
+                                          disabled={false}
+                                          onPointerDown={function handleEvent}
+                                          onKeyDown={function handleEvent}
+                                          ref={function}
+                                        >
+                                ...
+                                  <div className="space-y-6">
+                                    ...
+                                      <Slot ref={function}>
+                                        <SlotClone ref={function}>
+                                          <Primitive.button type="button" role="combobox" aria-controls="radix-_R_c..." ...>
+                                            <button
+                                              type="button"
+                                              role="combobox"
++                                             aria-controls="radix-_R_cq5esndlb_"
+-                                             aria-controls="radix-_R_1j95esndlb_"
+                                              aria-expanded={false}
+                                              aria-required={undefined}
+                                              aria-autocomplete="none"
+                                              dir="ltr"
+                                              data-state="closed"
+                                              disabled={false}
+                                              data-disabled={undefined}
+                                              data-placeholder={undefined}
+                                              data-slot="select-trigger"
+                                              data-size="default"
+                                              className={"border-input data-[placeholder]:text-muted-foreground [&_sv..."}
+                                              onClick={function handleEvent}
+                                              onPointerDown={function handleEvent}
+                                              onKeyDown={function handleEvent}
+                                              ref={function}
+                                            >
+                                    ...
+                                      <div dir="ltr" data-orientation="horizontal" data-slot="tabs" ...>
+                                        ...
+                                          <div role="tablist" aria-orientation="horizontal" data-slot="tabs-list" ...>
+                                            ...
+                                              <Slot tabIndex={-1} data-orientation="horizontal" ...>
+                                                <SlotClone tabIndex={-1} data-orientation="horizontal" ...>
+                                                  <Primitive.button type="button" role="tab" aria-selected={true} ...>
+                                                    <button
+                                                      type="button"
+                                                      role="tab"
+                                                      aria-selected={true}
++                                                     aria-controls="radix-_R_1a5esndlb_-content-daily"
+-                                                     aria-controls="radix-_R_595esndlb_-content-daily"
+                                                      data-state="active"
+                                                      data-disabled={undefined}
+                                                      disabled={false}
++                                                     id="radix-_R_1a5esndlb_-trigger-daily"
+-                                                     id="radix-_R_595esndlb_-trigger-daily"
+                                                      data-slot="tabs-trigger"
+                                                      className={"data-[state=active]:bg-background dark:data-[state=..."}
+                                                      onMouseDown={function}
+                                                      onKeyDown={function}
+                                                      onFocus={function}
+                                                      tabIndex={-1}
+                                                      data-orientation="horizontal"
+                                                      data-radix-collection-item=""
+                                                      ref={function}
+                                                    >
+                                            ...
+                                              <Slot tabIndex={-1} data-orientation="horizontal" ...>
+                                                <SlotClone tabIndex={-1} data-orientation="horizontal" ...>
+                                                  <Primitive.button type="button" role="tab" aria-selected={false} ...>
+                                                    <button
+                                                      type="button"
+                                                      role="tab"
+                                                      aria-selected={false}
++                                                     aria-controls="radix-_R_1a5esndlb_-content-weekly"
+-                                                     aria-controls="radix-_R_595esndlb_-content-weekly"
+                                                      data-state="inactive"
+                                                      data-disabled={undefined}
+                                                      disabled={false}
++                                                     id="radix-_R_1a5esndlb_-trigger-weekly"
+-                                                     id="radix-_R_595esndlb_-trigger-weekly"
+                                                      data-slot="tabs-trigger"
+                                                      className={"data-[state=active]:bg-background dark:data-[state=..."}
+                                                      onMouseDown={function}
+                                                      onKeyDown={function}
+                                                      onFocus={function}
+                                                      tabIndex={-1}
+                                                      data-orientation="horizontal"
+                                                      data-radix-collection-item=""
+                                                      ref={function}
+                                                    >
+                                            ...
+                                              <Slot tabIndex={-1} data-orientation="horizontal" ...>
+                                                <SlotClone tabIndex={-1} data-orientation="horizontal" ...>
+                                                  <Primitive.button type="button" role="tab" aria-selected={false} ...>
+                                                    <button
+                                                      type="button"
+                                                      role="tab"
+                                                      aria-selected={false}
++                                                     aria-controls="radix-_R_1a5esndlb_-content-monthly"
+-                                                     aria-controls="radix-_R_595esndlb_-content-monthly"
+                                                      data-state="inactive"
+                                                      data-disabled={undefined}
+                                                      disabled={false}
++                                                     id="radix-_R_1a5esndlb_-trigger-monthly"
+-                                                     id="radix-_R_595esndlb_-trigger-monthly"
+                                                      data-slot="tabs-trigger"
+                                                      className={"data-[state=active]:bg-background dark:data-[state=..."}
+                                                      onMouseDown={function}
+                                                      onKeyDown={function}
+                                                      onFocus={function}
+                                                      tabIndex={-1}
+                                                      data-orientation="horizontal"
+                                                      data-radix-collection-item=""
+                                                      ref={function}
+                                                    >
+                                        <TabsContent value="daily" className="mt-4 sm:mt...">
+                                          <TabsContent data-slot="tabs-content" className="flex-1 out..." value="daily">
+                                            <Presence present={true}>
+                                              <Primitive.div data-state="active" data-orientation="horizontal" ...>
+                                                <div
+                                                  data-state="active"
+                                                  data-orientation="horizontal"
+                                                  role="tabpanel"
++                                                 aria-labelledby="radix-_R_1a5esndlb_-trigger-daily"
+-                                                 aria-labelledby="radix-_R_595esndlb_-trigger-daily"
+                                                  hidden={false}
++                                                 id="radix-_R_1a5esndlb_-content-daily"
+-                                                 id="radix-_R_595esndlb_-content-daily"
+                                                  tabIndex={0}
+                                                  data-slot="tabs-content"
+                                                  className="flex-1 outline-none mt-4 sm:mt-6 space-y-4 sm:space-y-6"
+                                                  style={{animationDuration:"0s"}}
+                                                  ref={function}
+                                                >
+                                                  ...
+                                                    <Slot ref={function}>
+                                                      <SlotClone ref={function}>
+                                                        <Primitive.button type="button" role="combobox" ...>
+                                                          <button
+                                                            type="button"
+                                                            role="combobox"
++                                                           aria-controls="radix-_R_4ra5esndlb_"
+-                                                           aria-controls="radix-_R_jd95esndlb_"
+                                                            aria-expanded={false}
+                                                            aria-required={undefined}
+                                                            aria-autocomplete="none"
+                                                            dir="ltr"
+                                                            data-state="closed"
+                                                            disabled={false}
+                                                            data-disabled={undefined}
+                                                            data-placeholder={undefined}
+                                                            data-slot="select-trigger"
+                                                            data-size="default"
+                                                            className={"border-input data-[placeholder]:text-muted-fo..."}
+                                                            onClick={function handleEvent}
+                                                            onPointerDown={function handleEvent}
+                                                            onKeyDown={function handleEvent}
+                                                            ref={function}
+                                                          >
+                                                  <p>
+                                                  ...
+                                                    <Slot type="button" aria-haspopup="dialog" aria-expanded={false} ...>
+                                                      <SlotClone type="button" aria-haspopup="dialog" ...>
+                                                        <Button variant="outline" size="sm" className="min-w-[180px]" ...>
+                                                          <button
+                                                            data-slot="popover-trigger"
+                                                            className={"inline-flex items-center justify-center white..."}
+                                                            type="button"
+                                                            aria-haspopup="dialog"
+                                                            aria-expanded={false}
++                                                           aria-controls="radix-_R_1ra5esndlb_"
+-                                                           aria-controls="radix-_R_7d95esndlb_"
+                                                            data-state="closed"
+                                                            onClick={function handleEvent}
+                                                            ref={function}
+                                                          >
++                                                           All Activities
+                                                  ...
+                                    ...
+                            ...
+                  ...
+
+[00:27:28.533] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:27:28.533] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[00:27:28.534] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766375901572}
+[00:28:24.100] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:28:25.496] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:25.606] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:28:25.882] Browser ERROR   ./staff-activity-tracker/app/staff/page.tsx:26:1
+Parsing ecmascript source code failed
+  24 |     .select("*")
+  25 |     .eq("owner_id", user.id)
+> 26 | >>>>>>> 344105cb890f3d6d626a94213c40109298ac427f
+     | ^^^^^^^
+  27 |
+  28 |   return (
+  29 |     <DashboardLayout userEmail={user.email}>
+
+Merge conflict marker encountered.
+[00:28:26.296] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/dashboard" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="/staff-act...">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="font-sans antialiased"
+-                           style={{padding-right:"15px",overflow-x:"hidden",overflow-y:"hidden"}}
+                          >
+                  ...
+
+[00:28:26.434] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:28:26.434] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard","route":"/dashboard"}
+[00:28:26.434] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1766375959448}
