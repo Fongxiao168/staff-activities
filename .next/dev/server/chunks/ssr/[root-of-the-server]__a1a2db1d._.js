@@ -136,10 +136,15 @@ async function HistoryPage() {
     if (!user) {
         (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$opentelemetry_f75add33659c2db89c68654b17222459$2f$node_modules$2f$next$2f$dist$2f$client$2f$components$2f$navigation$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["redirect"])("/auth/login");
     }
-    // Fetch staff
-    const { data: staff = [] } = await supabase.from("staff").select("*");
-    // Fetch daily records
-    const { data: initialRecords = [] } = await supabase.from("daily_records").select("*");
+    // Fetch staff for this admin only
+    const { data: staff = [] } = await supabase.from("staff").select("*").eq("admin_id", user.id);
+    // Fetch daily records for this admin's staff
+    const staffIds = staff.map((s)=>s.id);
+    let initialRecords = [];
+    if (staffIds.length > 0) {
+        const { data } = await supabase.from("daily_records").select("*").in("staff_id", staffIds);
+        initialRecords = data || [];
+    }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$opentelemetry_f75add33659c2db89c68654b17222459$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$dashboard$2d$layout$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["DashboardLayout"], {
         userEmail: user.email,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$10_$40$opentelemetry_f75add33659c2db89c68654b17222459$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$history$2d$content$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["HistoryContent"], {
@@ -147,12 +152,12 @@ async function HistoryPage() {
             initialRecords: initialRecords
         }, void 0, false, {
             fileName: "[project]/app/history/page.tsx",
-            lineNumber: 24,
+            lineNumber: 29,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/history/page.tsx",
-        lineNumber: 23,
+        lineNumber: 28,
         columnNumber: 5
     }, this);
 }

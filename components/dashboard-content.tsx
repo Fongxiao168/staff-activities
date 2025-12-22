@@ -166,7 +166,14 @@ export function DashboardContent({ staff = [], initialRecords, trendRecords }: D
   useEffect(() => {
     async function fetchRecords() {
       setLoading(true)
-      let query = supabase.from("daily_records").select("*, staff(name)")
+      // Only fetch records for staff belonging to this admin
+      const staffIds = staff.map((s) => s.id)
+      if (staffIds.length === 0) {
+        setRecords([])
+        setLoading(false)
+        return
+      }
+      let query = supabase.from("daily_records").select("*, staff(name)").in("staff_id", staffIds)
 
       if (viewPeriod === "daily") {
         query = query.eq("record_date", selectedDate)
@@ -195,7 +202,7 @@ export function DashboardContent({ staff = [], initialRecords, trendRecords }: D
     }
 
     fetchRecords()
-  }, [viewPeriod, selectedDate, selectedMonth, selectedWeek, weeklyMonth])
+  }, [viewPeriod, selectedDate, selectedMonth, selectedWeek, weeklyMonth, staff])
 
   const filterByStaff = (records: DailyRecord[] = []) => {
     if (selectedStaff === "all") return records

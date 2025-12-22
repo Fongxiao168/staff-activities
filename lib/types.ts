@@ -10,6 +10,7 @@ export interface Staff {
   created_at: string
   updated_at: string
   is_active: boolean
+  admin_id: string // The user id of the admin who owns this staff
 }
 
 export interface DailyRecord {

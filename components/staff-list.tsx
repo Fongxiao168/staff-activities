@@ -34,9 +34,10 @@ import type { Staff } from "@/lib/types"
 
 interface StaffListProps {
   initialStaff: Staff[]
+  adminId: string
 }
 
-export function StaffList({ initialStaff = [] }: StaffListProps) {
+export function StaffList({ initialStaff = [], adminId }: StaffListProps) {
   const [staff, setStaff] = useState<Staff[]>(initialStaff)
   const [isAddOpen, setIsAddOpen] = useState(false)
   const [isEditOpen, setIsEditOpen] = useState(false)
@@ -81,6 +82,7 @@ export function StaffList({ initialStaff = [] }: StaffListProps) {
         department: formData.department.trim() || null,
         position: formData.position.trim() || null,
         date_of_joining: formData.date_of_joining,
+        admin_id: adminId,
       })
       .select()
       .single()
